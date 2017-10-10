@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/PTSans-CaptionBold.eot');
+    src: url('../fonts/PTSans-CaptionBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-CaptionBold.woff2') format('woff2'),
+    url('../fonts/PTSans-CaptionBold.woff') format('woff'),
+    url('../fonts/PTSans-CaptionBold.ttf') format('truetype'),
+    url('../fonts/PTSans-CaptionBold.svg#PTSans-CaptionBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/PTSans-Caption.eot');
+    src: url('../fonts/PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-Caption.woff2') format('woff2'),
+    url('../fonts/PTSans-Caption.woff') format('woff'),
+    url('../fonts/PTSans-Caption.ttf') format('truetype'),
+    url('../fonts/PTSans-Caption.svg#PTSans-Caption') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Regular.eot');
+    src: url('../fonts/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Merriweather-Regular.woff2') format('woff2'),
+    url('../fonts/Merriweather-Regular.woff') format('woff'),
+    url('../fonts/Merriweather-Regular.ttf') format('truetype'),
+    url('../fonts/Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* //fonts */
+
+html, body {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 320px;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+img {
+    display: inline-block;
+}
+
+/* Grid */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .col-4 {
+        width: 360px;
+    }
+
+/* header */
+header {
+    background: #343c4e;
+    background-image: url("../img/bg/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100vh;
+
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+    header a {
+        color: #fff;
+        transition: .5s all;
+    }
+    .header__title {
+        font-size: 56px;
+        line-height: 62px;
+        margin-bottom: 30px;
+        font-family: 'Merriweather', serif;
+        margin-top: -50px;
+    }
+    .header__slogan {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .header__arrow {
+        font-size: 48px;
+        width: 60px;
+        height: 50px;
+        margin-left: -30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transition: 0.2s ease-out;
+    }
+        .header__arrow:hover {
+            cursor: pointer;
+            background-color: #133155;
+            opacity: .3;
+        }
+
+/* portfolio */
+.portfolio {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.portfolio-item {
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.portfolio-item__img {
+    margin-bottom: 17px;
+}
+    .portfolio-item__img img {
+        max-width: 100%;
+        height: auto;
+    }
+.portfolio-item__title {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+    .portfolio-item__title a {
+        color: #000000;
+        border-bottom: 1px solid #fff;
+    }
+    .portfolio-item__title a:hover {
+        color: #0052c2;
+        border-color: rgba(0, 82, 194, 0.3);
+    }
+.portfolio-item__text p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+/* Portfolio Single Pages */
+.portfolio-single-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+    .portfolio-single-page img {
+        margin-bottom: 50px;
+        max-width: 100%;
+        height: auto;
+    }
+    .button-back {
+        font-weight: 700;
+        color: #0052c2;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        display: inline-block;
+        border: 2px solid #0052c2;
+        border-radius: 50px;
+        padding: 8px 23px;
+        margin-bottom: 13px;
+        transition: 0.2s ease-out;
+    }
+        .button-back:hover {
+            color: #fff;
+            background-color: #0052c2;
+        }
+
+/* FOOTER */
+footer {
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+    footer .row {
+        align-items: stretch;
+    }
+    footer p {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    p.footer__name {
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: normal;
+        font-style: 'Merriweather', serif;
+    }
+    p.footer__social,
+    p.footer__social-icons,
+    p.footer__social-icons a {
+        color: #fff;
+    }
+    p.footer__social-icons {
+        font-size: 32px;
+    }
+    p.footer__social-icons a {
+        margin-right: 30px;
+    }
+        p.footer__social-icons a:last-child {
+            margin-right: 0px;
+        }
+        p.footer__social-icons a:hover {
+            color: #ff3400;
+        }
+    .button {
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        padding: 8px 23px;
+        margin-bottom: 13px;
+        transition: 0.2s ease-out;
+    }
+        .button:hover {
+            color: #061634;
+            background-color: #fff;
+        }
+
+/* -----------------------------------------------
+        MEDIA
+-------------------------------------------------*/
+/* При ширині екрана 1160px і менше */
+@media (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+        .row {
+            flex-direction: column;
+        }
+        .col-4 {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header__title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+    .header__slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer {
+        padding-bottom: 50px;
+    }
+}
