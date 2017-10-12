@@ -242,7 +242,20 @@ footer {
             color: #061634;
             background-color: #fff;
         }
-
+    .hedden {
+        display: none;
+    }
+    form {
+        padding: 30px;
+        background-color: #fff;
+        max-width: 320px;
+        margin: auto;
+        position: relative;
+    }
+    form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 /* -----------------------------------------------
         MEDIA
 -------------------------------------------------*/

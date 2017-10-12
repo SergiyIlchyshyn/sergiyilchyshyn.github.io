@@ -13,6 +13,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
@@ -110,7 +111,23 @@
                     </p>
                 </div>
                 <div class="col-4">
-                    <div><a href="https://www.facebook.com/SergiyIlchyshyn" class="button" target="_blank">зв'язатися зі мною</a></div>
+                    <div>
+                        <a href="#form" class="button">зв'язатися зі мною</a>
+
+                        <div class="hedden">
+                            <form id="form">
+                                <!-- Hidden Required Fields -->
+                                <input type="hidden" name="project_name" value="HTML верстка і розробка сайтів">
+                                <input type="hidden" name="admin_email" value="sergiy.ilchyshyn@gmail.com">
+                                <input type="hidden" name="form_subject" value="Заявка із сайта портфоліо">
+                                <!-- END Hidden Required Fields -->
+                                <input type="text" name="Name" placeholder="You name..." required><br>
+                                <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                                <input type="text" name="Phone" placeholder="You phone..."><br>
+                                <button>Надіслати</button>
+                            </form>
+                        </div>
+                    </div>
                     <p>Напишіть мені, щоб замовити чи дізнатися<br> вартість верстки вашого проекта</p>
                 </div>
             </div>
@@ -118,6 +135,7 @@
     </footer>
 
     <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
