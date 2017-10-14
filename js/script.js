@@ -1,6 +1,3 @@
-/**
- * Created by Sergiy on 26.09.2017.
- */
 $(document).ready(function () {
     // Preloader init
     setTimeout(function() {
@@ -37,7 +34,3 @@ $(document).ready(function () {
         return false;
     }); // закінчення form
 });     // закінчення ready
-
-$(window).load(function(){
-
-});
