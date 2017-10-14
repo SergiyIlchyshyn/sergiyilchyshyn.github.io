@@ -2,6 +2,12 @@
  * Created by Sergiy on 26.09.2017.
  */
 $(document).ready(function () {
+    // Preloader init
+    setTimeout(function() {
+        $('.wrapper').addClass('loaded');
+    }, 2000);
+
+    // Плавний скрол
     $("#arrow").on("click", "a", function(event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
@@ -31,3 +37,7 @@ $(document).ready(function () {
         return false;
     }); // закінчення form
 });     // закінчення ready
+
+$(window).load(function(){
+
+});
