@@ -211,10 +211,20 @@ header {
         margin-bottom: 30px;
         font-family: 'Merriweather', serif;
         margin-top: -50px;
+
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
     }
     .header__slogan {
         font-size: 28px;
         line-height: 42px;
+
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
     }
     .header__arrow {
         font-size: 48px;
