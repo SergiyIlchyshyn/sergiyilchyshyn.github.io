@@ -445,3 +445,6 @@ template {
 [hidden] {
     display: none;
 }
+
+/* расчет ширины и высоты элементов */
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }

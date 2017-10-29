@@ -72,13 +72,13 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
-                            <img src="img/portfolio/project_organica.jpg" alt="Макет Органика">
+                            <img src="img/portfolio/project_portfolio.PNG" alt="Особистий сайт портфоліо">
                         </div>
                         <div class="portfolio-item__title">
-                            <a href="work-organics.html">Макет Органика</a>
+                            <a href="work-portfolio.html">Особистий сайт портфоліо</a>
                         </div>
                         <div class="portfolio-item__text">
-                            <p>Верстка одностраничного сайта по PSD макету.</p>
+                            <p>Верстка особистого сайту портфоліо на якому ви зараз перебуваєте.</p>
                         </div>
                     </div>
                 </div>
@@ -88,13 +88,13 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
-                            <img src="img/portfolio/project_apollo.jpg" alt="Учебный макет Аполло">
+                            <img src="img/portfolio/project_landing_01.png" alt="Landing Page">
                         </div>
                         <div class="portfolio-item__title">
-                            <a href="work-apollo.html">Учебный макет Аполло</a>
+                            <a href="work-landing-01.html">Landing Page Shop</a>
                         </div>
                         <div class="portfolio-item__text">
-                            <p>Верстка лендинга хостинг компании. Мобильная адаптивность.</p>
+                            <p>Верстка односторінкового сайту по PSD макету. Мобільна адаптивність.</p>
                         </div>
                     </div>
                 </div>
@@ -104,17 +104,50 @@
                 <div class="col-4">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
-                            <img src="img/portfolio/project_portfolio.jpg" alt="Личный сайт портфолио">
+                            <img src="img/portfolio/project_landing_02.png" alt="Landing Page Mobile Apps">
                         </div>
                         <div class="portfolio-item__title">
-                            <a href="work-portfolio.html">Личный сайт портфолио</a>
+                            <a href="work-landing-02.html">Landing Page Mobile Apps</a>
                         </div>
                         <div class="portfolio-item__text">
-                            <p>Верстка личного сайта портфолио на котором вы сейчас находитесь.</p>
+                            <p>Верстка лендінгу мобільного додатку по PSD макету. Мобільна адаптивність.</p>
                         </div>
                     </div>
                 </div>
                 <!-- // Работа в портфолио -->
+
+                <!-- Работа в портфолио -->
+                <div class="col-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item__img">
+                            <img src="img/portfolio/project_flex-landing.png" alt="Flexy Landing Page">
+                        </div>
+                        <div class="portfolio-item__title">
+                            <a href="work-portfolio.html">Flex Landing Page</a>
+                        </div>
+                        <div class="portfolio-item__text">
+                            <p>Верстка особистого сайту портфоліо на якому ви зараз перебуваєте.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Работа в портфолио -->
+
+                <!-- Работа в портфолио -->
+                <div class="col-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item__img">
+                            <img src="img/portfolio/project_blog.png" alt="Blog">
+                        </div>
+                        <div class="portfolio-item__title">
+                            <a href="work-portfolio.html">Blog</a>
+                        </div>
+                        <div class="portfolio-item__text">
+                            <p>Верстка особистого сайту портфоліо на якому ви зараз перебуваєте.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Работа в портфолио -->
+
             </div>
         </div>
     </div>
@@ -145,21 +178,19 @@
                 </div>
                 <div class="col-4">
                     <div>
-                        <a href="form" class="button">зв'язатися зі мною</a>
+                        <a href="#form-popup" class="button-with-form button">зв'язатися зі мною</a>
 
-                        <div class="hidden-form">
-                            <form>
-                                <!-- Hidden Required Fields -->
-                                <input type="hidden" name="project_name" value="HTML верстка і розробка сайтів">
-                                <input type="hidden" name="admin_email" value="sergiy.ilchyshyn@gmail.com">
-                                <input type="hidden" name="form_subject" value="Заявка із сайта портфоліо">
-                                <!-- END Hidden Required Fields -->
-                                <input type="text" name="Name" placeholder="You name..." required><br>
-                                <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-                                <input type="text" name="Phone" placeholder="You phone..."><br>
-                                <button type="submit">Надіслати</button>
+                        <!-- Модальная форма -->
+                        <div id="form-popup" class="white-popup mfp-hide">
+                            <form class="modal">
+                                <input name="name" placeholder="Вкажіть Ваше ім'я:" class="name" required />
+                                <input name="emailaddress" placeholder="Вкажіть Ваш Email:" class="email" type="email" required />
+                                <textarea rows="4" cols="50" name="subject" placeholder="Введіть повідомлення:" class="message" required></textarea>
+                                <input name="submit" class="btn" type="submit" value="Надіслати" />
                             </form>
                         </div>
+                        <!-- конец блока  формы-->
+
                     </div>
                     <p>Напишіть мені, щоб замовити чи дізнатися<br> вартість верстки вашого проекта</p>
                 </div>
@@ -169,7 +200,7 @@
 
     </div>
 
-    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 

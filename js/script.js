@@ -17,7 +17,12 @@ $(document).ready(function () {
     }); // закінчення on
 
     // Initializing popup
-    $(".button").magnificPopup();
+    $(".button-with-form").magnificPopup({
+        type: 'inline',
+        preloader: false,
+        closeBtnInside: false
+        //focus: '.name'
+    });
 
     // Ajax відправка форми
     $("form").submit(function(){
