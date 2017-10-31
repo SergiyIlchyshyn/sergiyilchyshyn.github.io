@@ -37,9 +37,8 @@
     <meta name="twitter:image:src" content="http://ilchyshyn.ml/img/og.PNG"/>
     <meta name="twitter:domain" content="http://ilchyshyn.ml"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon.ico -->
@@ -67,9 +66,17 @@
     <div class="portfolio" id="portfolio">
         <div class="container">
             <div class="title">Мої роботи</div>
+            <nav class="category__filter">
+                <ul>
+                    <li class="categoty__btn active" data-filter="all">Всі</li>
+                    <li class="categoty__btn" data-filter="portfolio">Сайт-візитка</li>
+                    <li class="categoty__btn" data-filter="landing">Langin Page</li>
+                    <li class="categoty__btn" data-filter="blog">Blog</li>
+                </ul>
+            </nav>
             <div class="row">
                 <!-- Работа в портфолио -->
-                <div class="col-4">
+                <div class="col-4 filter portfolio">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
                             <img src="img/portfolio/project_portfolio.PNG" alt="Особистий сайт портфоліо">
@@ -85,7 +92,7 @@
                 <!-- // Работа в портфолио -->
 
                 <!-- Работа в портфолио -->
-                <div class="col-4">
+                <div class="col-4 filter landing">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
                             <img src="img/portfolio/project_landing_01.png" alt="Landing Page">
@@ -101,7 +108,7 @@
                 <!-- // Работа в портфолио -->
 
                 <!-- Работа в портфолио -->
-                <div class="col-4">
+                <div class="col-4 filter landing">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
                             <img src="img/portfolio/project_landing_02.png" alt="Landing Page Mobile Apps">
@@ -117,32 +124,32 @@
                 <!-- // Работа в портфолио -->
 
                 <!-- Работа в портфолио -->
-                <div class="col-4">
+                <div class="col-4 filter landing">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
                             <img src="img/portfolio/project_flex-landing.png" alt="Flexy Landing Page">
                         </div>
                         <div class="portfolio-item__title">
-                            <a href="work-portfolio.html">Flex Landing Page</a>
+                            <a href="work-flex-landing.html">Flex Landing Page</a>
                         </div>
                         <div class="portfolio-item__text">
-                            <p>Верстка особистого сайту портфоліо на якому ви зараз перебуваєте.</p>
+                            <p>Landing Page with flex</p>
                         </div>
                     </div>
                 </div>
                 <!-- // Работа в портфолио -->
 
                 <!-- Работа в портфолио -->
-                <div class="col-4">
+                <div class="col-4 filter blog">
                     <div class="portfolio-item">
                         <div class="portfolio-item__img">
                             <img src="img/portfolio/project_blog.png" alt="Blog">
                         </div>
                         <div class="portfolio-item__title">
-                            <a href="work-portfolio.html">Blog</a>
+                            <a href="work-blog.html">Blog</a>
                         </div>
                         <div class="portfolio-item__text">
-                            <p>Верстка особистого сайту портфоліо на якому ви зараз перебуваєте.</p>
+                            <p>Головна сторінка блогу</p>
                         </div>
                     </div>
                 </div>
@@ -158,6 +165,7 @@
                 <div class="col-4">
                     <p class="footer__name">© Сергій Ільчишин</p>
                     <p>HTML верстка і розробка сайтів</p>
+                    <p><a class="hashtag" href="#sergiyilchyshyn">#sergiyilchyshyn</a></p>
                 </div>
                 <div class="col-4">
                     <p class="footer__social">Мої профілі в соціальних мережах:</p>
@@ -189,7 +197,7 @@
                                 <input name="submit" class="btn" type="submit" value="Надіслати" />
                             </form>
                         </div>
-                        <!-- конец блока  формы-->
+                        <!-- конец блока формы-->
 
                     </div>
                     <p>Напишіть мені, щоб замовити чи дізнатися<br> вартість верстки вашого проекта</p>
@@ -198,7 +206,9 @@
         </div>
     </footer>
 
-    </div>
+    <!-- Скролл вверх -->
+    <div class="scrolltop"></div>
+    </div> <!-- End .wrapper -->
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
