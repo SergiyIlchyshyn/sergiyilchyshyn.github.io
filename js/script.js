@@ -27,16 +27,28 @@ $(document).ready(function () {
     });
 
     // Ajax відправка форми
-    $("form").submit(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
         $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
+            url: "https://formspree.io/sergiy.ilchyshyn@gmail.com",
+            method: "POST",
+            data: {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                message: $("#msg").val(),
+                _subject: "Заявка із сайту ilchyshyn.ml"
+            },
+            dataType: "json"
         }).done(function(){
+            $("#name").val("");
+            $("#email").val("");
+            $("#msg").val("");
             alert("Дякую за заявку! Найближчим часом з Вами зв'яжемося.");
             setTimeout(function(){
                 $.magnificPopup.close();
             }, 1000); // закінчення setTimeout
+        }).fail(function(){
+           alert("Помилка привідправлені листа.і")
         }); // закінчення ajx
         return false;
     }); // закінчення form

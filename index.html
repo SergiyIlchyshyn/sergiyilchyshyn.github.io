@@ -190,10 +190,11 @@
 
                         <!-- Модальная форма -->
                         <div id="form-popup" class="white-popup mfp-hide">
-                            <form class="modal">
-                                <input name="name" placeholder="Вкажіть Ваше ім'я:" class="name" required />
-                                <input name="emailaddress" placeholder="Вкажіть Ваш Email:" class="email" type="email" required />
-                                <textarea rows="4" cols="50" name="subject" placeholder="Введіть повідомлення:" class="message" required></textarea>
+                            <form class="modal" method="POST">
+                                <input name="name" placeholder="Вкажіть Ваше ім'я:" class="name" id="name" required />
+                                <input name="emailaddress" placeholder="Вкажіть Ваш Email:" class="email" id="email" type="email" required />
+                                <textarea rows="4" cols="50" name="message" placeholder="Введіть повідомлення:" class="message" id="msg" required></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
                                 <input name="submit" class="btn" type="submit" value="Надіслати" />
                             </form>
                         </div>
