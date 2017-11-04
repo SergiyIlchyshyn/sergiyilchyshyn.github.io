@@ -4,18 +4,21 @@ $(document).ready(function () {
         $('.wrapper').addClass('loaded');
     }, 2000);
 
-    $(".categoty__btn").click(function(){
-       var value = $(this).attr("data-filter");
-       if(value == "all") {
-           $(".filter").show("1000");
-       } else {
-           $(".filter").not("."+value).hide("1000");
-           $(".filter").filter("."+value).show("1000");
-       }
-       // Add active class
-        $(".category__filter ul li").click(function(){
-           $(this).addClass('active').siblings().removeClass('active');
-        });
+    // Add active class
+    $('.categoty__btn').click(function(){
+        $('.category__filter ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Category filter
+    $('.categoty__btn').click(function(){
+        var category = $(this).attr('data-filter');
+        if (category == 'all') {
+            $('.filter').show('300');
+        } else {
+            $('.filter').not('.' + category).hide('300');
+            $('.filter').filter('.' + category).show('300');
+        }
     });
 
     // Initializing popup
@@ -48,7 +51,7 @@ $(document).ready(function () {
                 $.magnificPopup.close();
             }, 1000); // закінчення setTimeout
         }).fail(function(){
-           alert("Помилка привідправлені листа.і")
+           alert("Помилка при відправлені листа.")
         }); // закінчення ajx
         return false;
     }); // закінчення form
@@ -60,7 +63,6 @@ $(window).load(function(){
     var timeToScroll = winHeight/step;
 
     $('.scrolltop').on('click', function(){
-
         $('html, body').animate({
             scrollTop: 0
         }, timeToScroll);
