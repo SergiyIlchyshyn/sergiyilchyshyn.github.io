@@ -77,9 +77,7 @@ a {
 abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
 }
-
 /*** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
 b, strong {
     font-weight: inherit;
@@ -221,7 +219,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
 }
-    .col-4 { width: 360px; }
+.col-4 { width: 360px; }
 .wrapper {
     position: relative;
     height: 100%;
@@ -446,7 +444,13 @@ header {
     background: #5274a9;
     color: #fff;
 }
-
+.filter {
+    margin-bottom: 0.8rem;
+    box-shadow: 0 1px 40px rgba(0, 0, 0, 0.15);
+}
+.portfolio-item {
+    text-align: center;
+}
 .portfolio-item__img {
     margin-bottom: 17px;
 }
