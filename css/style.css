@@ -731,7 +731,7 @@ input:focus, textarea:focus {
     .container { width: 100%; }
         .row { flex-direction: column; }
         .col-4 {
-            width: 100%;
+            width: 500px;
             text-align: center;
             margin: 0 auto 30px auto;
             padding-left: 15px;
@@ -764,8 +764,8 @@ input:focus, textarea:focus {
         right: 20px;
     }
 }
-
 @media (max-width: 600px) {
+    .col-4 { width: 100%; }
     .scrolltop {
         bottom: 10px;
         right: 10px;
