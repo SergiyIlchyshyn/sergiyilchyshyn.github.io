@@ -453,7 +453,7 @@ header {
     .portfolio-item__img img {
         max-width: 100%;
         height: auto;
-        display: block;
+        margin: 0 auto;
         position: relative;
         transition: .5s ease;
     }
@@ -793,6 +793,8 @@ input:focus, textarea:focus {
         bottom: 10px;
         right: 10px;
     }
+    .overlay { display: none; }
+    .portfolio-item__img:hover img { opacity: 1; }
 }
 @media (max-width: 540px) {
     .title {
