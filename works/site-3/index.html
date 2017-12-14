@@ -1,97 +1,124 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />	
+    <meta charset="utf-8">
+    <title>Responsive Flexbox Site</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div class="center-block-main">
-			<a href="/"><img src="images/logo.jpg" alt="" class="logo"></a>
-			<nav>
-				<ul class="menu">
-					<li><a href="#">Journal</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<div class="center-block-main content">
-		<main>
-			<article>
-				<header>
-					<img src="images/img1.jpg" alt="">
-					<p class="publish">Published by Sergiy Ilchyshyn 28.07.2016</p>
-				</header>
-				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-					ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt 
-					mollit anim id est laborum.</p>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit 
-					esse cillum dolore eu fugiat nulla pariatur...</p>
-					<p><a href="#" class="more">Continue Reading</a></p>
-			</article>
-			<article>
-				<header>
-					<img src="images/img2.jpg" alt="">
-				</header>
-				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-					ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt 
-					mollit anim id est laborum.</p>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit 
-					esse cillum dolore eu fugiat nulla pariatur...</p>
-					<p><a href="#" class="more">Continue Reading</a></p>
-			</article>
-		</main>
-		
-		<aside>
-			<div class="widget">
-				<h2>Search</h2>
-				<form action="" method="get">
-					<input type="search" type="text" class="search" 
-						placeholder="What are you looking for?">
-				</form>
-			</div>
-			<div class="widget">
-				<h2>Categories</h2>
-				<nav>
-					<ul>
-						<li><a href="#">Journal</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="widget">
-				<h2>Stay Tuned.</h2>
-				<div class="subsrcibe">
-				<form action="" method="get">
-					<input type="email" placeholder="Your Email" class="subsribe-input">
-					<input type="image" src="images/sbcr-btn.jpg" class="subsribe-img">
-				</form>
-				</div>
-			</div>
-			<div class="widget">
-				<img src="images/banner.jpg" alt="">
-			</div>
-		</aside>
-		<div class="clr"></div>
-		<div class="pager clearfix">
-			<p class="previous-link">&larr; <a href="#">Previous</a></p>
-			<p class="next-link"><a href="#">Next</a> &rarr; </p>
-		</div>
-	</div>
-	<footer>
-		<div class="center-block-main">
-			<a href="/"><img src="images/logo-ftr.jpg" alt=""></a>
-			<p>&copy; 2016 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com</p>
-		</div>
-	</footer>
+<div class="wrapper">
+    <div class="row" id="header">
+        <div class="col-12">
+            <img src="img/logo_main.png" alt="" class="logo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <nav role="navigation">
+                <div class="menu-btn">
+                    <span class="menu-span">Menu</span>
+                    <a class="toggle-nav" href="#"><span></span></a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <img src="img/kite.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="padding: 2%;">
+            <h2 class="dark">Welcome on Flexbox Site!</h2>
+        </div>
+    </div>
+    <div class="row" style="background-color: #3c88b6; padding: 5% 0 3%">
+        <div class="col-12">
+            <img src="img/paper.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #f6931f;">
+        <div class="col-11">
+            <h2>Get ready for take off!</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="img/take-off.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #1abc9c;">
+        <div class="col-10">
+            <h2>We're flying around the global.</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="img/orange-globe.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #e5ef3f;">
+        <div class="col-9">
+            <h2 class="dark">Above the cloudds &amp; over the sea.</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="img/waves.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #34495e;">
+        <div class="col-8">
+            <h2>In just 42 hours and 27 minutes.</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="img/plane.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #00afe1;">
+        <div class="col-7">
+            <h2 class="dark">So come along for the ride!</h2>
+        </div>
+        <div class="col-3">
+            <img class="circle" src="img/paper-blue.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #66d4ff;">
+        <div class="col-12">
+            <img src="img/plane-background.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="background-color: #66d4ff;">
+        <div class="col-12">
+            <h2>Follow Us</h2>
+        </div>
+    </div>
+    <div class="row" style="background-color: #66d4ff;">
+        <div class="col-12">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="background-color: #34495e; border-top: 2px solid #f6931e;">
+        <div class="col-12">
+            <p>&copy; Flexbox Site.</p>
+        </div>
+    </div>
+</div> <!-- End Wrapper -->
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
