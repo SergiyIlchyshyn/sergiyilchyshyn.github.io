@@ -807,6 +807,7 @@ input:focus, textarea:focus {
     .scrolltop { display: none; }
     .overlay { display: none; }
     .portfolio-item__img:hover img { opacity: 1; }
+    #particles-js { display: none; }
 }
 @media (max-width: 540px) {
     .title {
