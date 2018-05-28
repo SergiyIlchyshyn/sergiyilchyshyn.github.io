@@ -4,6 +4,11 @@ $(document).ready(function () {
         $('.wrapper').addClass('loaded');
     }, 2000);
 
+    // ParticlesJS
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+		console.log('callback - particles-min.js config loaded');
+	});
+
     // Add active class
     $('.categoty__btn').click(function(){
         $('.category__filter ul li').removeClass('active');
