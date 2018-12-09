@@ -4,6 +4,24 @@ $(document).ready(function () {
         $('.wrapper').addClass('loaded');
     }, 2000);
 
+     // Плавний скрол
+    $("#arrow").on("click", "a", function(event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за ... мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    }); // закінчення on
+    // scroll up
+    $('.scrolltop').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
+
     // ParticlesJS
 	particlesJS.load('particles-js', 'assets/particles.json', function() {
 		console.log('callback - particles-min.js config loaded');
@@ -62,25 +80,11 @@ $(document).ready(function () {
     }); // закінчення form
 });     // закінчення ready
 
-$(window).load(function(){
-    var winHeight = $(document).height();
-    var step = 2;
-    var timeToScroll = winHeight/step;
+$(window).scroll(function(){
+    if($(this).scrollTop() > 40){
+        $('.scrolltop').fadeIn();
+    }else{
+        $('.scrolltop').fadeOut();
 
-    $('.scrolltop').on('click', function(){
-        $('html, body').animate({
-            scrollTop: 0
-        }, timeToScroll);
-    });
-    // Плавний скрол
-    $("#arrow").on("click", "a", function(event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-        //забираем идентификатор бока с атрибута href
-        var id = $(this).attr('href'),
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-        //анимируем переход на расстояние - top за ... мс
-        $('body,html').animate({scrollTop: top}, timeToScroll);
-    }); // закінчення on
+    }
 });

@@ -729,6 +729,7 @@ input:focus, textarea:focus {
 
 /* --- Scroll --- */
 .scrolltop {
+    display: none;
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -742,7 +743,7 @@ input:focus, textarea:focus {
 }
 .scrolltop:hover {
     opacity: 1;
-    transition: .3s;
+    box-shadow: 0 0 30px 0 rgba(50, 50, 50, 0.55);
 }
 .scrolltop::after {
     content: "⇪";
@@ -804,7 +805,7 @@ input:focus, textarea:focus {
 }
 @media (max-width: 600px) {
     .col-4 { width: 80%; }
-    .scrolltop { display: none; }
+    .scrolltop { display: none!important; }
     .overlay { display: none; }
     .portfolio-item__img:hover img { opacity: 1; }
     #particles-js { display: none; }
