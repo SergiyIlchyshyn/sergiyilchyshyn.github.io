@@ -1,11 +1,11 @@
 # sergiyilchyshyn.github.io
-www.ilchyshyn.ml
+www.ilchyshyn.tk
 
 ##Links for my works:
 
-http://ilchyshyn.ml/works/site-1/ <br>
-http://ilchyshyn.ml/works/site-2/ <br>
-http://ilchyshyn.ml/works/site-3/ <br>
-http://ilchyshyn.ml/works/site-4/ <br>
-http://ilchyshyn.ml/works/site-5/ <br>
-http://ilchyshyn.ml/works/site-6/ <br>
+http://ilchyshyn.tk/works/site-1/ <br>
+http://ilchyshyn.tk/works/site-2/ <br>
+http://ilchyshyn.tk/works/site-3/ <br>
+http://ilchyshyn.tk/works/site-4/ <br>
+http://ilchyshyn.tk/works/site-5/ <br>
+http://ilchyshyn.tk/works/site-6/ <br>
