@@ -1,0 +1,113 @@
+.news {
+    margin-top: 14rem;
+    margin-bottom: 7.5rem;
+    @media @tablet {
+        // margin-top: 12rem;
+        margin-bottom: 5rem;
+    }
+}
+.news__header {
+    margin-bottom: 55px;
+    text-align: center;
+}
+.news__title {
+    margin-bottom: .3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+.news__text {
+    font-size: 1.2rem;
+    color: @gray-light;
+    font-weight: 300;
+}
+// Articles
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+    margin-bottom: 40px;
+    @media @notebook {
+        justify-items: center;
+    }
+    @media @mobile-sm {
+        grid-template-columns: 1fr;
+    }
+}
+
+.articles__item {
+    max-width: 370px;
+}
+.article__header {
+    position: relative;
+    margin-bottom: 1.35rem;
+}
+.article__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+
+    background-color: @black;
+    text-align: center;
+    color: @white;
+    font-size: 1.06rem;
+    line-height: 1.4;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.article__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;;
+}
+.article__content {
+    margin-bottom: 2rem;
+}
+.article__title {
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.article__cat {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: .8rem;
+    color: @black;
+    text-transform: uppercase;
+}
+.article__text {
+    font-size: .8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+}
+
+// news footer
+.news__footer {
+    text-align: right;
+}
+.news__link {
+    font-size: .94rem;
+    color: @gray;
+    &:hover {
+        text-decoration: none;
+    }
+}
