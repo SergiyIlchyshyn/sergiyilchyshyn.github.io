@@ -1,0 +1,101 @@
+body {
+    background-image: url("../img/bg/bg-lines.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: initial;
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    // max-width: 1224px;
+    // min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 1254px) {
+        width: 1254px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.relative {
+    position: relative;
+}
+.read-more-link {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    position: relative;
+    &::after {
+        content: "";
+        height: 2px;
+        background-color: @link-hover;
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+    }
+    &:hover {
+        text-decoration: none;
+        color: @link-hover;
+    }
+}
+.description-text {
+    color: rgba(97, 97, 97, 0.6);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+.title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0.42px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.title-description {
+    .description-text;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.subtitle {
+    display: block;
+    color: @link-hover;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+}
+.vertical-text {
+    color: @text-color-light;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    transform: rotate(-90deg) translate(-100%, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: left top;
+}

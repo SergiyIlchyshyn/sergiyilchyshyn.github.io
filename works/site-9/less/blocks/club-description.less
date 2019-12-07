@@ -1,0 +1,71 @@
+.club-description {
+    margin-top: 110px/2;
+    padding-bottom: 95px/2;
+    @media (min-width: 1254px) {
+        margin-top: 110px;
+        padding-bottom: 95px;
+    }
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        width: 70%;
+        @media (min-width: 1254px) {
+            width: auto;
+        }
+    }
+    &__video {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        top: 43px;
+        z-index: 1; 
+        @media (min-width: 1254px) {
+            width: auto;
+        }    
+    }
+    &__text {
+        max-width: 450px;
+        margin-top: 90px;        
+        .description-text;
+        @media (min-width: 855px) and (max-width: 1254px) {
+            max-width: 300px;
+        }
+        @media (min-width: 1254px) {
+            width: 340px;
+            margin: 60px 0 45px 115px;   
+        }
+    }
+    &__link {      
+        @media (min-width: 1254px) {
+            margin-left: 115px;
+        }
+    }
+}
+.club-description__video--control {
+    height: 68px/2;
+    width: 68px/2;
+    border-radius: 50%;
+    background-color: @link-hover;
+    box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (min-width: 1254px) {
+        height: 68px;
+        width: 68px;   
+    }
+    img {
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, -50%);
+        @media (min-width: 1254px) {
+            width: auto; 
+        }
+    }
+}

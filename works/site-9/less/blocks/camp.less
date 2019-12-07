@@ -1,0 +1,57 @@
+.camp {
+    min-height: 475px;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    &__img {
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-width: 768px) {
+            height: auto;
+        }
+    }
+    &__description {
+        padding-top: 105px/3;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media (min-width: 768px) {
+            padding-top: 105px;
+            padding-left: 45px;
+            padding-right: 0;
+        }
+    }
+    &__label {
+        color: rgba(11, 12, 17, 0.27);
+        font-family: 'League Spartan', sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 5.58px;
+    }
+    &__address {
+        margin-top: 60px/2;
+        margin-bottom: 60px/2;
+        margin-left: 0;
+        color: #333333;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        @media (min-width: 400px) {
+            font-size: 26px;
+        }
+        @media (min-width: 768px) {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 50px;
+            font-size: 32px;
+            line-height: 46px;
+        }
+    }
+}

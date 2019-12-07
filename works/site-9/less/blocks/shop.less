@@ -1,0 +1,198 @@
+.shop {
+    padding-top: 95px/2;
+    padding-bottom: 80px/2;
+    position: relative;
+    @media (min-width: 1254px) {
+        padding-top: 95px;
+        padding-bottom: 80px;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        top: -330px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 984px;
+        z-index: -1;
+        background-image: url("../img/bg/bg-lines.png"), url("../img/bg/bg-water.jpg");
+        background-repeat: repeat-y, no-repeat;
+        background-position: center, center;
+        background-size: auto, cover;
+    }
+}
+.shop-slider-wrapper {
+    height: 565px;
+    margin-bottom: 20px;
+    position: relative;
+    @media (min-width: 650px) {
+        margin-bottom: 80px;
+    }
+}
+.shop-slider-special-holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    // @media (min-width: 1254px) {
+    //     right: -85px;   
+    // }
+    @media (min-width: 1406px) {
+        right: -75px;   
+    }
+}
+#shopSlider.owl-carousel .owl-item img {
+    width: auto;
+}
+.shopSlider-controls {
+    position: relative;
+}
+.shopSlider-arrow {
+    width: 40px;
+    height: 48px;
+    padding: 15px;
+    position: absolute; 
+    bottom: 120px;
+    z-index: 10;
+    cursor: pointer;
+    @media (min-width: 650px) {
+        bottom: calc(120px + 80px);
+    }
+    img {
+        vertical-align: top;
+    }
+    &--left {
+        left: -15px;
+        @media (min-width: 650px) {
+            left: 70px;
+            transform: translate(-100%, 0%);
+        }
+        @media (min-width: 1338px) {
+            left: 0;
+        }
+        // @media (min-width: 1254px) {
+            // left: -70px;
+        // }
+        
+    }
+    &--right {
+        right: -15px;
+        @media (min-width: 650px) {
+            // right: 70px;
+            // right: -70px;
+            transform: translate(-100%, 0);
+        }
+        // @media (min-width: 1254px) {
+            // right: -70px;
+            // right: -40px;
+        // }
+        @media (min-width: 1338px) {
+            right: 0;
+            transform: translate(100%, 0%);
+        }
+    }
+}
+// .shop-slider {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 50px;
+//     margin-bottom: 80px;
+    
+// }
+.board {   
+    position: relative;
+    width: 250px;
+    height: 435px;
+    // margin-top: 13px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 650px) {
+        width: 435px + 185px;
+        padding-left: 185px;
+    }
+    @media (min-width: 1254px) {
+        // width: 435px;
+        // height: 435px;
+        margin-top: 70px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.board__img-holder {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    height: 320px;
+    background-color: #ececec;
+    @media (min-width: 650px) {
+        left: 185px;
+    }
+    @media (min-width: 1254px) {
+        left: 0;
+    }
+}
+.board__img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.board-description {
+    width: 210px;
+    position: absolute;
+    top: 196px;
+    right: 0;
+    z-index: 9;
+    text-align: right;
+    @media (min-width: 650px) {
+        right: auto;
+        left: 216px + 185px;
+        text-align: left;
+    }
+    @media (min-width: 1254px) {
+        left: 216px;
+    }
+}
+.board__cat {
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.board__title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.26px;
+}
+.board-buy {
+    margin-top: 38px;
+    margin-left: 55px;
+    &__price {
+        color: #ce60a8;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: -0.1px;
+        margin-bottom: 3px;
+    }
+    &__link {
+        color: #333333;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 5.4px;
+        margin-left: 4px;
+    }
+}
+.shop-link-wrapper  {
+    display: flex;
+    justify-content: center;
+}
