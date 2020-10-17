@@ -468,7 +468,7 @@ img {
 }
 
 .country__head.singapore {
-    background-image: url("../img/bg/sing.jpg");
+    background-image: url("../img/bg/sing2.jpg");
 }
 
 .country__head.london {
@@ -552,6 +552,15 @@ img {
     position: absolute;
     left: 0;
     top: 17px;
+}
+
+.article__text .img {
+    display: flex;
+    justify-content: center;
+}
+
+.article__text .img>img {
+    width: 700px;
 }
 
 
