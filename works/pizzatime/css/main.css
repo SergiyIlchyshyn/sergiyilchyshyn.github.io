@@ -698,3 +698,264 @@ img {
 
 
 /*===== END CATALOG =====*/
+
+
+/*===== SECTION-ABOUT =====*/
+
+.section-about {
+    background: linear-gradient(to top, #2d2c2c, #1f1f1f);
+    color: #fff;
+    position: relative;
+}
+
+.section-about__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* width: 1400px; */
+}
+
+.section-about__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-about__content {
+    width: 50%;
+    padding-left: 80px;
+}
+
+.section-about__title {
+    text-align: left;
+    margin-bottom: var(--h3-font-size);
+}
+
+.section-about__text {
+    font-size: var(--h4-font-size);
+    line-height: 1.67;
+}
+
+@media (max-width: 1200px) {
+    .section-about {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .section-about__content {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-about__img {
+        width: 100%;
+    }
+    .section-about__container {
+        justify-content: center;
+    }
+    .section-about__content {
+        padding-left: 0;
+        width: 500px;
+        max-width: 100%;
+    }
+}
+
+
+/*===== END SECTION-ABOUT =====*/
+
+
+/*===== SECTION-CONTACTS =====*/
+
+.section-contacts {
+    overflow: hidden;
+}
+
+.section-contacts__container {
+    position: relative;
+}
+
+.section-contacts__container::before {
+    content: '';
+    position: absolute;
+    background: url(../img/section-contacts/tomatoes.jpg) no-repeat;
+    background-size: cover;
+    width: 672px;
+    height: 397px;
+    right: -350px;
+    bottom: -100px;
+}
+
+.sectoin-contacts__title {
+    margin-bottom: 0;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts__start {
+    width: 50%;
+}
+
+.contacts__end {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.contacts__map {
+    height: 450px;
+    background-color: #fef0b4;
+}
+
+.contacts__item {
+    margin-bottom: 35px;
+}
+
+.contacts__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.contacts__title {
+    margin: 0 0 5px;
+    font-family: var(--title-font);
+    font-size: var(--h4-font-size);
+    font-weight: 900;
+}
+
+.contacts__text {
+    font-size: var(--h4-font-size);
+}
+
+.contacts__phone {
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.contacts__phone:hover {
+    color: #ffa650;
+}
+
+@media (max-width: 1800px) {
+    .section-contacts__container::before {
+        right: -250px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .section-contacts__container::before {
+        right: -150px;
+        bottom: -200px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section-contacts__container::before {
+        right: -100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-contacts__container::before {
+        right: -50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-contacts__container::before {
+        content: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts__map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-contacts {
+        padding-bottom: 0;
+    }
+    .contacts__start {
+        width: 100%;
+        order: 1;
+    }
+    .contacts__end {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding-left: 0;
+    }
+    .contacts__map {
+        margin: 0 -20px;
+        height: 300px;
+    }
+}
+
+
+/* socials start */
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.socials__item {
+    margin-right: 7px;
+}
+
+.socials__link {
+    display: inline-block;
+}
+
+.socials__icon {
+    fill: #ffa650;
+    width: 35px;
+    height: 35px;
+    transition: fill .2s, opacity .2s;
+}
+
+.socials__icon--vk:hover {
+    fill: #5078A5;
+}
+
+.socials__icon--fb:hover {
+    fill: #3E58A1;
+}
+
+.socials__icon--inst:hover {
+    fill: #E6369C;
+}
+
+.socials__icon:active {
+    opacity: .7;
+}
+
+.socials__logo {
+    fill: #fff;
+}
+
+@media (max-width: 767px) {
+    .socials__item {
+        margin-right: 15px;
+    }
+    .socials__icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+/* socials end */
+
+
+/*===== END SECTION-CONTACTS =====*/
