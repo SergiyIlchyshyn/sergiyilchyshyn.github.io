@@ -178,7 +178,7 @@ img {
     border: 3px solid #fff;
     padding: 8px 16px;
     border-radius: 21.5px;
-    transition: background-color .2s, opacity .2s;
+    transition: color .2s, background .2s, opacity .2s;
 }
 
 .phone__item:hover {
@@ -186,8 +186,9 @@ img {
     background-color: #fff;
 }
 
-.phone__item:active {
-    opacity: 0.8;
+.phone__item--accent {
+    border-color: #ffa650;
+    color: #ffa650;
 }
 
 .phone__item--accent:hover {
@@ -1001,8 +1002,8 @@ img {
     height: 100%;
     overflow: auto;
     pointer-events: none;
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
 }
 
 .popup.is-active {
@@ -1025,7 +1026,8 @@ img {
 
 .popup__content {
     background: #fff;
-    padding: 70px 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     max-width: 730px;
     margin: 0 auto;
     position: relative;
