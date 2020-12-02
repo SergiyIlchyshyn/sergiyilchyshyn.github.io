@@ -69,7 +69,7 @@
     <section class="section section-catalog">
         <div class="container">
             <header class="section__header">
-                <h2 class="section__title section__title--accent">Меню</h2>
+                <h2 class="page-title page-title--accent">Меню</h2>
                 <nav class="catalog-nav">
                     <ul class="catalog-nav__wrapper">
                         <li class="catalog-nav__item"><button class="catalog-nav__btn is-active" type="button">все</button></li>
@@ -297,7 +297,7 @@
         <img src="img/section-about/bg.jpg" alt="" class="section-about__img">
         <div class="container section-about__container">
             <div class="section-about__content">
-                <h2 class="section__title section-about__title">О нас</h2>
+                <h2 class="page-title section-about__title">О нас</h2>
                 <p class="section-about__text">Доставим вам горячую пиццу менее чем за час или пицца бесплатно. Мы готовим пиццу только из свежих продуктов. Каждый день мы покупаем свежие овощи, грибы и мясо.</p>
             </div>
         </div>
@@ -307,7 +307,7 @@
     <section class="section section-contacts">
         <div class="container section-contacts__container">
             <header class="section__header">
-                <h2 class="section__title sectoin-contacts__title">Контакты</h2>
+                <h2 class="page-title sectoin-contacts__title">Контакты</h2>
             </header>
             <div class="contacts">
                 <div class="contacts__start">
@@ -432,7 +432,42 @@
             </div>
         </div>
     </div>
-    <!-- /.popup-menu --
+    <!-- /.popup-menu -->
+
+    <!-- popup-order -->
+    <div class="popup popup-order is-active">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content popup__content--fluid popup__content--centered">
+                    <button class="btn-close popup__btn-close"></button>
+                    <h2 class="page-title popup__title">Заполните форму</h2>
+                    <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
+                    <div class="order">
+                        <img class="order__img" src="img/section-catalog/1.png" alt="">
+                        <h3 class="order__title">
+                            <span>Салями</span>
+                            <span>850</span> &#8381;
+                        </h3>
+                        <p class="order__size">35 см</p>
+                        <form class="form">
+                            <input type="hidden" name="пицца">
+                            <input type="hidden" name="цена">
+                            <input type="hidden" name="размер">
+                            <input class="form__input" type="text" name="имя" placeholder="Имя" required>
+                            <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+                            <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
+                            <select class="form__input" name="оплата">
+                                <option value="Оплата наличными">Оплата наличными</option>
+                                <option value="Оплата картой">Оплата картой</option>
+                            </select>
+                            <button class="button form__btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.popup-order -->
 </body>
 
 </html>
