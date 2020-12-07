@@ -270,7 +270,7 @@ img {
 /*===== HEADER =====*/
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -310,6 +310,7 @@ img {
     font-weight: var(--font-black);
     font-size: var(--h4-font-size);
     position: relative;
+    transition: padding .4s;
 }
 
 .header__link::before {
@@ -342,10 +343,15 @@ img {
     display: none;
 }
 
+.header.is-active .header__link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 @media (max-width: 1200px) {
     .header__link {
         font-size: var(--normal-font-size);
-        padding: 12px 30px;
+        /* padding: 12px 30px; */
     }
     .header__phone {
         font-size: var(--small-font-size);
