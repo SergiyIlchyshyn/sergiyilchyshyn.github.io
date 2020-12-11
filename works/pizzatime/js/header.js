@@ -1,6 +1,6 @@
 ;
 (function() {
-    if (window.matchMedia('(max-width: 992px)').matches) {
+    if (window.matchMedia("(max-width: 992px)").matches) {
         return;
     }
 
