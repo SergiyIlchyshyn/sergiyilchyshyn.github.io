@@ -1,37 +1,5 @@
 ;
 (function() {
-    var body = document.querySelector('body');
-
-    var closesItemByClass = function(item, className) {
-        var node = item;
-
-        while (node) {
-
-            if (node.classList.contains(className)) {
-                return node;
-            } else {
-                node = node.parentElement;
-                // console.log(node);
-            }
-        }
-        return null;
-    };
-
-    var closesAttr = function(item, attr) {
-        var node = item;
-
-        while (node) {
-            var attrValue = node.getAttribute(attr);
-            if (attrValue) {
-                return attrValue;
-            } else {
-                node = node.parentElement;
-                // console.log(node);
-            }
-        }
-        return null;
-    };
-
     var showPopup = function(target) {
         target.classList.add('is-active');
     };
@@ -39,15 +7,11 @@
     var closePopup = function(target) {
         target.classList.remove('is-active');
     };
-    // toggleScroll(); - забираємо scroll сторінки
-    var toggleScroll = function() {
-        body.classList.toggle('no-scroll');
-    }
 
-    body.addEventListener('click', function(e) {
+    myLib.body.addEventListener('click', function(e) {
         var target = e.target;
         // var popupClass = target.getAttribute('data-popup');
-        var popupClass = closesAttr(target, 'data-popup');
+        var popupClass = myLib.closesAttr(target, 'data-popup');
 
         if (popupClass === null) {
             return;
@@ -60,24 +24,24 @@
 
         if (popup) {
             showPopup(popup);
-            toggleScroll();
+            myLib.toggleScroll();
         }
     });
 
-    body.addEventListener('click', function(e) {
+    myLib.body.addEventListener('click', function(e) {
         var target = e.target;
 
-        if (target.classList.contains('popup__btn-close') || target.classList.contains('popup__inner')) {
+        if (target.classList.contains('popup-close') || target.classList.contains('popup__inner')) {
             // console.log(target);
-            var popup = closesItemByClass(target, 'popup');
+            var popup = myLib.closesItemByClass(target, 'popup');
 
             // console.log(popup);
             closePopup(popup);
-            toggleScroll();
+            myLib.toggleScroll();
         }
     });
 
-    body.addEventListener('keydown', function(e) {
+    myLib.body.addEventListener('keydown', function(e) {
         if (e.keyCode !== 27) {
             return;
         }
@@ -86,7 +50,7 @@
 
         if (popup) {
             closePopup(popup);
-            toggleScroll();
+            myLib.toggleScroll();
         }
     });
 })();
