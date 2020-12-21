@@ -444,21 +444,21 @@
     <div class="popup popup-order">
         <div class="popup__wrapper">
             <div class="popup__inner">
-                <div class="popup__content popup__content--fluid popup__content--centered">
+                <div class="popup__content">
                     <button class="btn-close popup__btn-close popup-close"></button>
                     <h2 class="page-title popup__title">Заполните форму</h2>
                     <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
                     <div class="order">
                         <img class="order__img" src="img/section-catalog/1.png" alt="">
                         <h3 class="order__title">
-                            <span>Салями</span>
-                            <span>850</span> &#8381;
+                            <span class="order-product-title">Салями</span>
+                            <span class="order-product-price">850</span> &#8381;
                         </h3>
                         <p class="order__size">35 см</p>
                         <form class="form">
-                            <input type="hidden" name="пицца">
-                            <input type="hidden" name="цена">
-                            <input type="hidden" name="размер">
+                            <input class="order-info-title" type="hidden" name="пицца">
+                            <input class="order-info-price" type="hidden" name="цена">
+                            <input class="order-info-size" type="hidden" name="размер">
                             <input class="form__input" type="text" name="имя" placeholder="Имя" required>
                             <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
                             <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
@@ -508,6 +508,7 @@
     <script src="js/popup.js"></script>
     <script src="js/scrollTop.js"></script>
     <script src="js/catalog.js"></script>
+    <script src="js/product.js"></script>
 </body>
 
 </html>
