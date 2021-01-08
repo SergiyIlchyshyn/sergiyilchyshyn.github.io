@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PizzaTime Delivery</title>
+    <meta name="description" content="PizzaTime — пицца в Киеве от итальянского повара">
+    <meta name="keywords" content="пицца">
+    <title>PizzaTime — пицца в Киеве от итальянского повара</title>
 
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Meta -->
+    <meta property="og:title" content="PizzaTime — пицца в Киеве от итальянского повара" />
+    <meta property="og:description" content="PizzaTime — пицца в Киеве от итальянского повара" />
+    <meta property="og:image" content="img/section-top/bg.jpg" />
 
     <!-- Favicons -->
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -15,6 +22,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -23,7 +32,7 @@
         <div class="container header__container">
             <div class="header__start">
                 <div class="logo">
-                    <img class="logo__img lazy" data-src="img/common/logo.svg" alt="" width="127" height="21">
+                    <img class="logo__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/common/logo.svg" alt="" width="127" height="21">
                 </div>
             </div>
             <div class="header__end">
@@ -61,7 +70,7 @@
     </header>
     <!-- /.header -->
     <!-- section-top -->
-    <section class="section-top lazy" data-src="img/section-top/bg.jpg">
+    <section class="section-top lazy" data-src="img/section-top/bg.webp" data-src-replace-webp="img/section-top/bg.jpg">
         <div class="container section-top__container">
             <p class="section-top__info">от итальянского повара</p>
             <h1 class="section-top__title">Лучшая пицца в Киеве</h1>
@@ -88,7 +97,10 @@
             <div class="catalog">
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/1.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/1.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/1.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Салями</h3>
                             <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
@@ -112,7 +124,10 @@
                 </div>
                 <div class="catalog__item" data-category="meat">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/2.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/2.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/2.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Хит</h3>
                             <p class="product__description">Картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
@@ -136,7 +151,10 @@
                 </div>
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/3.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/3.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/3.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Ветчина-грибы</h3>
                             <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
@@ -160,7 +178,10 @@
                 </div>
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/4.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/4.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/4.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Карбонара</h3>
                             <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус </p>
@@ -184,7 +205,10 @@
                 </div>
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/5.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/5.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/5.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Фирменная</h3>
                             <p class="product__description">Томатно-сливочный соус, бекон, моцарелла</p>
@@ -208,7 +232,10 @@
                 </div>
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/6.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/6.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/6.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Ассорти</h3>
                             <p class="product__description">Картофель моцарелла, цыпленок, грибы, ветчина и французский соус </p>
@@ -232,7 +259,10 @@
                 </div>
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/7.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/7.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/7.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Л-01</h3>
                             <p class="product__description">Томаты, моцарелла, цыпленок, ветчина и французский соус, секректный ингредиент </p>
@@ -256,7 +286,10 @@
                 </div>
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/8.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/8.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/8.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Три сыра</h3>
                             <p class="product__description">Чеддер, камамбер, эдам</p>
@@ -280,7 +313,10 @@
                 </div>
                 <div class="catalog__item" data-category="meat">
                     <div class="product catalog__product">
-                        <img data-src="img/section-catalog/9.png" alt="" class="product__img lazy">
+                        <picture>
+                            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-catalog/9.webp">
+                            <img class="product__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-catalog/9.png" alt="">
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Мясная</h3>
                             <p class="product__description">Курица, говядина, сливочный соус, салями, огурцы маринованные, томаты, грибы, бекон
@@ -309,7 +345,10 @@
     <!-- /.section-catalog -->
     <!-- section-about -->
     <section class="section section-about">
-        <img data-src="img/section-about/bg.jpg" alt="" class="section-about__img lazy">
+        <picture>
+            <source type="image/webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-srcset="img/section-about/bg.webp">
+            <img class="section-about__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/section-about/bg.jpg" alt="">
+        </picture>
         <div class="container section-about__container">
             <div class="section-about__content">
                 <h2 class="page-title section-about__title">О нас</h2>
@@ -321,6 +360,7 @@
     <!-- section-contacts -->
     <section class="section section-contacts">
         <div class="container section-contacts__container">
+            <div class="section-contacts__img lazy" data-src="img/section-contacts/tomatoes.webp" data-src-replace-webp="img/section-contacts/tomatoes.jpg"></div>
             <header class="section__header">
                 <h2 class="page-title sectoin-contacts__title">Контакты</h2>
             </header>
@@ -458,12 +498,12 @@
                     <h2 class="page-title popup__title">Заполните форму</h2>
                     <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
                     <div class="order">
-                        <img class="order__img" data-src="img/section-catalog/1.png" alt="">
+                        <img class="order__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                         <h3 class="order__title">
-                            <span class="order-product-title">Салями</span>
-                            <span class="order-product-price">850</span> &#8381;
+                            <span class="order-product-title"></span>
+                            <span class="order-product-price"></span> &#8381;
                         </h3>
-                        <p class="order__size">35 см</p>
+                        <p class="order__size"></p>
                         <form class="form form-send">
                             <input class="order-info-title" type="hidden" name="пицца">
                             <input class="order-info-price" type="hidden" name="цена">

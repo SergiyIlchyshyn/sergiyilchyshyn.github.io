@@ -389,6 +389,17 @@ img {
 /*===== END HEADER =====*/
 
 
+/* logo start */
+
+.logo__img {
+    width: 127px;
+    height: 19px;
+}
+
+
+/* logo end */
+
+
 /*===== SECTION TOP =====*/
 
 .section-top {
@@ -418,6 +429,7 @@ img {
 .section-top__container {
     position: relative;
     width: 520px;
+    margin: 0;
 }
 
 .section-top__info {
@@ -633,6 +645,8 @@ img {
 .product__img {
     display: block;
     margin: 0 auto 15px;
+    width: 340px;
+    height: 207px;
 }
 
 .product__content {
@@ -715,6 +729,12 @@ img {
 
 .product__btn:hover {
     background-color: #ff7c21;
+}
+
+@media (max-width: 1200px) {
+    .product__img {
+        height: auto;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -825,10 +845,21 @@ img {
     position: relative;
 }
 
-.section-contacts__container::before {
+
+/* .section-contacts__container::before {
     content: '';
     position: absolute;
     background: url(../img/section-contacts/tomatoes.jpg) no-repeat;
+    background-size: cover;
+    width: 672px;
+    height: 397px;
+    right: -350px;
+    bottom: -100px;
+} */
+
+.section-contacts__img {
+    position: absolute;
+    background: no-repeat;
     background-size: cover;
     width: 672px;
     height: 397px;
@@ -1063,7 +1094,7 @@ img {
 }
 
 .popup__content {
-    background: #fff;
+    background-color: #fff;
     padding-top: 70px;
     padding-bottom: 70px;
     max-width: 730px;
