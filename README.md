@@ -16,3 +16,6 @@ http://ilchyshyn.ml/works/site-9/ <br>
 http://ilchyshyn.ml/works/site-10/ <br>
 http://ilchyshyn.ml/works/site-11/ <br>
 http://ilchyshyn.ml/works/site-12/ <br>
+http://ilchyshyn.ml/works/smart-city/ <br>
+http://ilchyshyn.ml/works/pizzatime/ <br>
+http://dn.school5kp.org.ua/ <br>
