@@ -267,7 +267,7 @@ body {
     margin-right: 8px;
 }
 .list__img > img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: 32px;
     object-fit: contain;
 }
@@ -290,6 +290,10 @@ body {
     color: #D93A30;
     display: inline-block;
     margin-left: 10px;
+}
+.list__text {
+    font-size: 10px;
+    margin-bottom: 13px;
 }
 .list__stat {
     list-style: none;
@@ -338,7 +342,22 @@ border-radius: 200px;
     font-weight: bold;
     font-size: 9px;
 }
-
+.comment_item {
+    box-shadow: none;
+    position: relative;
+}
+.comment_item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 80%;
+    height: 1px;
+    background-color: #E8E8E8;
+}
+.comment_item:last-of-type::after {
+    content: none;
+}
 /* Login/SignUp section */
 
 .auth {
