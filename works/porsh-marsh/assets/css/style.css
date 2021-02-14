@@ -29,7 +29,9 @@ body {
     background-color: #ffffff;
     color: var(--text-color);
 }
-
+.m-0 {
+    margin: 0!important;
+}
 
 /* Header section */
 
@@ -212,77 +214,84 @@ body {
     font-weight: bold;
 }
 /* ===================== */
-.content__lists {
+.main-board {
     display: grid;
     grid-template-columns: 263px 263px 263px 263px;
     column-gap: 27px;
 }
 /* Likes box */
-.likes {
+.list {
     width: 263px;
     padding: 10px 12px;
     box-shadow: 0px 4px 30px rgba(107, 104, 255, 0.1);
 }
-.likes__head {
+.list__head {
     position: relative;
 }
-.likes__head-icon {
+.list__head-icon {
     position: absolute;
     top: 0;
     right: 0;
 }
-.likes__title {
+.list__title {
     font-weight: bold;
     font-size: 12px;
     line-height: 1.33;
     color: var(--header-color);
 }
-.likes__subtitle {
+.list__subtitle {
     font-size: 10px;
     line-height: 1.6;
     color: #c3c5c2;
 }
-.likes__list {
+.list__items {
     list-style: none;
     padding: 0;
     margin-top: 20px;
 }
-.likes__item {
+.list__item {
     padding: 7px 7px 2px;
     box-shadow: 0px 4px 15px rgba(0, 126, 249, 0.06);
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.likes__box {
+.list__wrapper {
     display: flex;
     align-items: center;
 }
-.likes__img {
-    width: 29px;
-    height: 29px;
+.list__img {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     box-shadow: 0px 0px 9px rgba(107, 104, 255, 0.15);
     margin-right: 8px;
 }
-.likes__img > img {
-    width: 100%;
+.list__img > img {
+    max-width: 100%;
+    height: 32px;
+    object-fit: contain;
 }
 
-.likes__user {
+.list__user {
     font-size: 11px;
     line-height: 1.45;
     color: #4f4f4f;
 }
-.likes__desc {
+.list__desc {
     font-size: 8px;
     line-height: 2;
     color: var(--header-color);
     margin-bottom: 5px;
 }
-.likes__desc > span {
+.list__desc > span {
     font-weight: bold;
 }
-.likes__stat {
+.danger {
+    color: #D93A30;
+    display: inline-block;
+    margin-left: 10px;
+}
+.list__stat {
     list-style: none;
     padding: 0;
     display: flex;
@@ -291,11 +300,11 @@ body {
     font-size: 9px;
     color: #878787;
 }
-.likes__stat > li {
+.list__stat > li {
     display: flex;
     align-items: center;
 }
-.likes__stat-icon {
+.list__stat-icon {
     width: 14px;
     height: 14px;
     margin-right: 5px;
@@ -305,11 +314,31 @@ body {
     box-shadow: 0px 0px 15px rgba(107, 104, 255, 0.15);
 border-radius: 200px;
 }
-.likes__stat-icon > svg {
+.list__stat-icon > svg {
     width: 10px;
     height: 10px;
     fill: #9B99FF;
 }
+.list__discount {
+    margin-left: auto;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--header-color);
+    color: #ffffff;
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.list__discount > span {
+    font-weight: bold;
+    font-size: 9px;
+}
+
 /* Login/SignUp section */
 
 .auth {
