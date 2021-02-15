@@ -715,6 +715,9 @@ body {
     .main-board {
         grid-template-columns: 1fr;
     }
+    .list {
+        width: 100%;
+    }
     .chart,
     .follow,
     .comments,
