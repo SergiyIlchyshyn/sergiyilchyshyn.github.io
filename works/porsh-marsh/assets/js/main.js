@@ -10,23 +10,59 @@ $(document).ready(function() {
 
     // ================= Tabs ==========================
     $('#tabs-menu-1 li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+      var tab_id = $(this).attr('data-tab');
 
-		$('#tabs-menu-1 li').removeClass('current');
-		$('.tab_1').removeClass('current');
+      $('#tabs-menu-1 li').removeClass('current');
+      $('.tab_1').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	});
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
     $('#tabs-menu-2 li').click(function(){
-		var tab_id = $(this).attr('data-tab');
+      var tab_id = $(this).attr('data-tab');
 
-		$('#tabs-menu-2 li').removeClass('current');
-		$('.tab_2').removeClass('current');
+      $('#tabs-menu-2 li').removeClass('current');
+      $('.tab_2').removeClass('current');
 
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	});
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+    $('#tabs-menu-3 li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+
+      $('#tabs-menu-3 li').removeClass('current');
+      $('.tab_3').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+    /*===== SWIPER CAROUSEL =====*/
+    const mySwiper = new Swiper('.content__row', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        clickable: true,
+        // breakpoints: {
+        //     640: {
+        //         slidesPerView: 3,
+        //     },
+        //     1024: {
+        //         slidesPerView: 4,
+        //     },
+        // }
+    });
+    /* =============================== */
+    /* Mobile nav */
+    /* =============================== */
+    const navToggle = $("#navToggle");
+    // const nav = $("#nav");
+    
+    navToggle.on("click", function (event) {
+        event.preventDefault();
+
+        // nav.toggleClass("show");
+        $(this).children().toggleClass("active");
+    });
+
     // =============== Chart.js ===========
     new Chart(document.getElementById("line-chart"), {
         type: 'line',
