@@ -229,9 +229,13 @@ body {
 /* ===================== */
 .main-board {
     display: grid;
-    grid-template-columns: 263px 263px 263px 263px;
-    column-gap: 27px;
+    grid-template-columns: repeat(4, 263px);
+    gap: 22px 27px;
 }
+/* .div1 { grid-area: 1 / 3 / 2 / 4; } */
+.follow { grid-area: 1 / 3 / 3 / 4; }
+.chart { grid-area: 2 / 1 / 3 / 3; }
+
 /* Likes box */
 .list {
     width: 263px;
@@ -411,6 +415,7 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s;
+    flex: auto;
 }
 .tab__link:first-of-type {
     border-radius: 5px 0 0 5px
@@ -427,11 +432,17 @@ body {
     background-color: var(--header-color);
     color: #ffffff;
 }
-.tab {
+.tab_1,
+.tab_2 {
     display: none;
 }
-.tab.current {
+.tab_1.current,
+.tab_2.current {
     display: inherit;
+}
+/* Chart ========================= */
+.chart {
+    width: auto;
 }
 
 /* Login/SignUp section */
