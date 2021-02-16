@@ -54,13 +54,18 @@ $(document).ready(function() {
     /* Mobile nav */
     /* =============================== */
     const navToggle = $("#navToggle");
-    // const nav = $("#nav");
+    const popupMenu = $(".popup-menu");
+    const mobileLinks = $(".mobile-menu__link");
     
     navToggle.on("click", function (event) {
         event.preventDefault();
-
-        // nav.toggleClass("show");
         $(this).children().toggleClass("active");
+        popupMenu.toggleClass("is-active");
+        $("body").toggleClass("hidden");
+    });
+    mobileLinks.click(function (event) {
+        event.preventDefault();
+        $(this).toggleClass("active");
     });
 
     // =============== Chart.js ===========

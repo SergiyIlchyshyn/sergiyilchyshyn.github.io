@@ -70,6 +70,7 @@ body {
     outline: none;
     cursor: pointer;
     margin-right: 25px;
+    z-index: 1000;
 }
 .burger__item {
     display: block;
@@ -222,6 +223,103 @@ body {
 .active .sidebar-icon {
     fill: var(--header-color);
 }
+/* Mobile menu */
+.popup-menu {
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: left top;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    display: table;
+}
+.popup-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.popup-menu.is-active li {
+    display: block;
+    animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    animation-delay: 0.4s;
+    transform: rotate(-7deg);
+    transform-origin: left bottom;
+}
+.popup-menu.is-active li:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+.popup-menu.is-active li:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+.popup-menu.is-active li:nth-of-type(4) {
+    animation-delay: 0.7s;
+}
+.popup-menu.is-active li:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+.mobile-menu {
+    text-align: left;
+    position: absolute;
+    left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mobile-menu__ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.mobile-menu__li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    width: 100%;
+}
+.mobile-menu__link {
+    display: inline-block;
+    border: 1px solid var(--header-color-opacity);
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    margin: 5px 0;
+    transition: 0.2s;
+    background-color: var(--header-color);
+}
+.mobile-menu__link:hover,
+.mobile-menu__link:active,
+.mobile-menu__link:focus {
+    transform: translateX(-2px);
+    padding-left: 80px;
+}
+/* .mobile-menu__link.active {
+    transform: translateX(-2px);
+    padding-left: 80px;
+    background-color: #fff;
+    color: var(--header-color);
+} */
+
 /* ====================== */
 /* === Content === */
 /* ====================== */
