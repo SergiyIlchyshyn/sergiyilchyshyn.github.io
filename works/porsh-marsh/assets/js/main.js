@@ -1,7 +1,8 @@
 $(document).ready(function() {
     // DateTimePicker
     flatpickr('#flatpickr', {
-        "mode": "range"
+        mode: "range",
+        dateFormat: "j M Y"
     });
 
     // =================================================

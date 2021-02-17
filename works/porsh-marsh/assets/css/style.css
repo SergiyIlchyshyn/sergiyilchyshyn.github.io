@@ -327,7 +327,22 @@ body {
     width: calc(100% - 201px);
     padding: 12px 20px;
 }
+/* Datapicker */
+.datapicker {
+    width: 225px;
+    border: 1px solid var(--header-color);
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 12px;
+    color: var(--header-color);
+    position: relative;
+}
+.datapicker:focus,
+.datapicker:active {
+    outline-color: var(--header-color);
+}
 
+/* Content_row */
 .content__row {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -872,6 +887,11 @@ body {
     }
     .select__menu {
         display: inline-block;
+    }
+    .datapicker {
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 16px;
     }
     /* .container {
         margin: 0;
