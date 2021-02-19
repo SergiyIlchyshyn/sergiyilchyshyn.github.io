@@ -1,57 +1,5 @@
 $(document).ready(function() {
-    // DateTimePicker
-    flatpickr('#flatpickr', {
-        mode: "range",
-        dateFormat: "j M Y"
-    });
-
-    // =================================================
-    $('.input-container').last().css("margin-bottom", "0");
-    $('.form__text').last().css("margin-top", "50px");
-
-    // ================= Tabs ==========================
-    $('#tabs-menu-1 li').click(function(){
-      var tab_id = $(this).attr('data-tab');
-
-      $('#tabs-menu-1 li').removeClass('current');
-      $('.tab_1').removeClass('current');
-
-      $(this).addClass('current');
-      $("#"+tab_id).addClass('current');
-    });
-    $('#tabs-menu-2 li').click(function(){
-      var tab_id = $(this).attr('data-tab');
-
-      $('#tabs-menu-2 li').removeClass('current');
-      $('.tab_2').removeClass('current');
-
-      $(this).addClass('current');
-      $("#"+tab_id).addClass('current');
-    });
-    $('#tabs-menu-3 li').click(function(){
-      var tab_id = $(this).attr('data-tab');
-
-      $('#tabs-menu-3 li').removeClass('current');
-      $('.tab_3').removeClass('current');
-
-      $(this).addClass('current');
-      $("#"+tab_id).addClass('current');
-    });
-    /*===== SWIPER CAROUSEL =====*/
-    const mySwiper = new Swiper('.content__row', {
-        slidesPerView: 'auto',
-        spaceBetween: 16,
-        clickable: true,
-        // breakpoints: {
-        //     640: {
-        //         slidesPerView: 3,
-        //     },
-        //     1024: {
-        //         slidesPerView: 4,
-        //     },
-        // }
-    });
-    /* =============================== */
+  /* =============================== */
     /* Mobile nav */
     /* =============================== */
     const navToggle = $("#navToggle");
@@ -69,7 +17,93 @@ $(document).ready(function() {
         $(this).toggleClass("active");
     });
 
-    // =============== Chart.js ===========
+    /* =============================== */
+    /* DatePicker */
+    /* =============================== */
+    flatpickr('#flatpickr', {
+        mode: "range",
+        dateFormat: "j M Y"
+    });
+
+    // =================================================
+    $('.input-container').last().css("margin-bottom", "0");
+    $('.form__text').last().css("margin-top", "50px");
+
+    /* =============================== */
+    /* TABS */
+    /* =============================== */
+    $('#tabs-menu-1 li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('#tabs-menu-1 li').removeClass('current');
+        $('.tab_1').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    });
+    /* =============================== */
+    /* Select Menu */
+    /* =============================== */
+    const selectMenu = $('.select__menu');
+    selectMenu.on("click", function (event) {
+        event.preventDefault();
+        $(this).parent().toggleClass('is-active');
+    });
+    let k = '';
+    selectMenu.change(function (event) {
+        event.preventDefault();
+        const newTab = $(this).children(':selected').data('tab');
+        k = newTab;
+        myFunc(k);      
+    });
+    function myFunc(item) { 
+        console.log(item);
+        return item;
+    }
+    // var a = myFunc;
+    console.log(myFunc);
+    
+    /* =============================== */
+    $('#tabs-menu-2 li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('#tabs-menu-2 li').removeClass('current');
+        $('.tab_2').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    });
+    /* =============================== */
+    $('#tabs-menu-3 li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('#tabs-menu-3 li').removeClass('current');
+        $('.tab_3').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    });
+
+    /* =============================== */
+    /* SWIPER CAROUSEL */
+    /* =============================== */
+    const mySwiper = new Swiper('.content__row', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        clickable: true,
+        // breakpoints: {
+        //     640: {
+        //         slidesPerView: 3,
+        //     },
+        //     1024: {
+        //         slidesPerView: 4,
+        //     },
+        // }
+    });
+
+    /* =============================== */
+    /* Chart.js */
+    /* =============================== */
     new Chart(document.getElementById("line-chart"), {
         type: 'line',
         data: {
