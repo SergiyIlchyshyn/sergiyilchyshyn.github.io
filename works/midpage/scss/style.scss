@@ -24,7 +24,7 @@ body {
         background-color: #ff6401;
         color: #ffffff;
         border-radius: 32px;
-        padding: 15px 78px 17px 78px;
+        padding: 17px 75px 17px 78px;
         font-size: 21px;
         font-weight: 700;
         letter-spacing: 0.84px;
@@ -494,6 +494,54 @@ body {
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main {
+        flex: auto;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 12px;
+        &-offer {
+            color: #39b54a;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+    .order__btn {
+        a {
+            padding: 13px 85px 11px 80px;
+            font-size: 16px;
+            border-radius: 24px;
+            letter-spacing: 0.65px;
+        }
+    }
+}
+.policy {
+    &__wrap {
+        max-width: 1204px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 42px;
+        display: flex;
+        align-items: center;
+    }
+    &__info {
+        padding-left: 40px;
+        h4 {
+            font-size: 52px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 21px;
         }
     }
 }
