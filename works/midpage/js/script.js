@@ -18,4 +18,8 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         }
     });
+    /*===== Accordion =====*/
+    $(".faq__accordion-item h5").on("click", function(event) {
+		$(this).toggleClass("active").next().slideToggle();
+	});
 });

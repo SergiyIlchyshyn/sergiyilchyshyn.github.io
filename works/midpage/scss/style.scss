@@ -710,6 +710,19 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
                 transform: rotate(-90deg);
+                transition: transform 0.3s ease-in-out;
+            }
+            &.active {
+                &::before {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        p {
+            padding-top: 8px;
+            display: none;
+            &.active {
+                display: block;
             }
         }
     }
