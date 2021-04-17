@@ -525,6 +525,7 @@ body {
         }
     }
 }
+// Police section
 .policy {
     &__wrap {
         max-width: 1204px;
@@ -542,6 +543,116 @@ body {
         }
         p {
             font-size: 21px;
+        }
+    }
+}
+// Interview section
+.interview {
+    &-wrap {
+        max-width: 1204px;
+        margin: 0 auto;
+        padding-top: 42px;
+        padding-bottom: 92px;
+        display: flex;
+        align-items: center;
+    }
+    &-text,
+    &-video {
+        width: 50%;
+    }
+    &-text {
+        font-weight: 700;
+        line-height: 1.15;
+        h4 {
+            font-size: 52px;
+        }
+        a {
+            color: #ff6401;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+    }
+    &-video {
+        a {
+            display: inline-block;
+            max-width: 602px;
+            position: relative;
+            z-index: 1;
+            img {
+                width: 100%;
+            }
+            .icon-play {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                padding: 10px 10px 10px 13px;
+                position: absolute;
+                top: calc(42% - 30px);
+                left: calc(50% - 30px);
+                font-size: 17px;
+                color: #000000;
+                border-radius: 50%;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+// Component section
+.component {
+    &-wrap {
+        max-width: 775px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+    &-img {
+        min-height: 300px;
+        padding-top: 68px;
+        color: #ffffff;
+        background-image: url(../img/component-section/component-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 52px;
+            font-weight: 700;
+        }
+    }
+    &-slider {
+        max-width: 672px;
+        margin: 0 auto;
+        padding-bottom: 82px;
+        text-align: center;
+        h5 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #000000;
         }
     }
 }
