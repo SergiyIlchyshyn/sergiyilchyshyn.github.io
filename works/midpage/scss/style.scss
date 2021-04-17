@@ -656,3 +656,61 @@ body {
         }
     }
 }
+// Stock Up & Save Section
+.stockup {
+    &__wrap {
+        max-width: 1204px;
+        margin: 0 auto;
+        padding-top: 80px;
+        h3 {
+            text-align: center;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+    }
+}
+// FAQ Section
+.faq {
+    &__wrap {
+        max-width: 682px;
+        margin: 0 auto;
+        padding: 40px 0;
+        h3 {
+            text-align: center;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+    }
+    &__accordion {
+        padding-top: 30px;
+    }
+    &__accordion-item {
+        padding-top: 25px;
+        padding-bottom: 34px;
+        font-size: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        h5 {
+            padding-left: 54px;
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            cursor: pointer;
+            &::before {
+                content: "";
+                display: block;
+                width: 52px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS41OTciIGhlaWdodD0iMzQuMDI4IiB2aWV3Qm94PSIwIDAgMTUuNTk3IDM0LjAyOCI+CiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF80OTIiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDQ5MiIgZD0iTTEwMjQuMDczLDY2NjcuNGwxMS41MDctMTUuODM4LTExLjUwNy0xNS44MzgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDIyLjQ1NSAtNjYzNC41NDYpIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI0Ii8+Cjwvc3ZnPgo=);
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
