@@ -1,15 +1,25 @@
 $(document).ready(function () {
     /*===== SWIPER CAROUSEL =====*/
-    var mySwiper1 = new Swiper('.reviews__clients', {
+    let mySwiper1 = new Swiper('.reviews__clients', {
         loop: true,
         grabCursor: true,
         pagination: {
             el: '.swiper-pagination.swiper-pagination1',
         }
     });
-    var mySwiper2 = new Swiper('.component-slider', {
+    let componentThumbs = new Swiper('.thumbs-slider', {
+        slidesPerView: 1,
         loop: true,
-        grabCursor: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        grabCursor: false,
+    });
+    let componentSlider = new Swiper('.main-slider', {
+        slidesPerView: 1,
+        watchSlidesVisibility: true,
+        loop: true,
+        grabCursor: false,
+        thumbs: {swiper: componentThumbs},
         pagination: {
             el: '.swiper-pagination.swiper-pagination2',
         },
