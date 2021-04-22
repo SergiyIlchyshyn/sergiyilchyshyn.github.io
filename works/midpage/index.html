@@ -7,25 +7,28 @@
     <!-- ===== FONTS ===== -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- ===== SWIPER CSS ===== -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- ===== MAIN CSS ===== -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <section class="top__intro">
-        <div class="container">
-            <div class="top__intro-wrapper">            
+        <div class="wrapper">
+            <header>
+                <a href="javascript:void(0)">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </header>
+
+            <div class="top__intro-wrapper">
                 <div class="top__intro-description">
-                    <header>
-                        <a href="javascript:void(0)" class="header__logo">
-                            <img src="img/logo.svg" alt="">
-                        </a>
-                    </header>
-                    <h1>
-                        CuraLin. <br>    
-                        Safe & Powerful <br> 
-                        Glucuse Support.    
-                    </h1>
+                    <div class="intro-title">
+                        <h1>
+                            CuraLin. <br>
+                            Safe &amp; Powerful <br>
+                            Glucuse Support.
+                        </h1>
+                    </div>
                     <div class="order__wrapper">
                         <div class="order__btn">
                             <a href="javascript:void(0)">ORDER NOW</a>
@@ -47,67 +50,64 @@
                     </div>
                 </div>
                 <div class="top__intro-img">
-                    <img src="img/top-section/top-products.png" alt="">
+                    <span><img src="img/top-section/top-image.png" alt=""></span>
                 </div>
             </div>
         </div>
     </section>
     <section class="logo__brands">
-        <div class="container">
+        <div class="wrapper">
             <ul class="logo__brands-list">
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/bbc.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/msn.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/daily.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/yahoo.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/cnn.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/sun.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/express.svg" alt="">
                 </li>
-                <li class="logo__brands-item">
+                <li>
                     <img src="img/logos/usa-today.svg" alt="">
                 </li>
             </ul>
         </div>
     </section>
     <section class="what__is">
-        <div class="container">
+        <div class="wrapper">
             <div class="what__is-wrap">
-                <div class="what__is-wrap-left">
+                <div class="what__is-wrap-text">
                     <h2>What is CuraLin?</h2>
-                    <p>CuraLin is a clinically tested blood sugar support supplement made specifically for people who need to maintain healthy glucose levels and a powerful glycemic response. Safe, powerful, 100% natural, and supported by leading diabetes doctors worldwide.</p>
-                    <p>CuraLin works by blending specific glucose supporting herbs into a synergistic supplement that is strong enough to make a big difference in a diabetic's lifestyle. 
-                    It is a proprietary formula supported with scientific research and strengthened by modern production processes. You've never seen anything work like CuraLin...we promise you that.
+                    <p><b>CuraLin is a clinically tested blood sugar support supplement made specifically for people who
+                            need to maintain healthy glucose levels and a powerful glycemic response. Safe, powerful,
+                            100%
+                            natural, and supported by leading diabetes doctors worldwide.</b></p>
+                    <p>CuraLin works by blending specific glucose supporting herbs into a synergistic supplement that is
+                        strong enough to make a big difference in a diabetic's lifestyle.<br>
+                        It is a proprietary formula supported with scientific research and strengthened by modern
+                        production processes. You've never seen anything work like CuraLin...we promise you that.
                     </p>
                 </div>
-                <div class="what__is-wrap-right">
-                    <div class="what__is-right-picture">
-                        <div class="what__is-right-bg">
-                            <img src="img/product/product.png" alt="">
-                        </div>
-                        <div class="what__is-right-images">
-                            <span><img src="img/what-is/01.png" alt=""></span>
-                            <span><img src="img/what-is/02.png" alt=""></span>
-                            <span><img src="img/what-is/03.png" alt=""></span>
-                            <span><img src="img/what-is/04.png" alt=""></span>
-                        </div>
-                    </div>
+                <div class="what__is-right-picture">
+                    <span>
+                        <img src="img/product/what-is.png" alt="">
+                    </span>
                 </div>
                 <div class="order__wrapper">
                     <div class="order__btn">
-                        <a href="#">ORDER NOW</a>
+                        <a href="javascript:void(0)">ORDER NOW</a>
                     </div>
                     <div class="order__subtitle">
                         <div class="order__subtitle-item">
@@ -128,215 +128,241 @@
         </div>
     </section>
     <section class="results">
-        <div class="container">
-            <ul class="results__list">
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/01.svg" alt="">
-                    </span>
-                    <p>Promotes healthy pancreatic beta cells function*</p>
-                </li>
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/02.svg" alt="">
-                    </span>
-                    <p>Supports weight loss <br> & the metabolism of fats*</p>
-                </li>
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/03.svg" alt="">
-                    </span>
-                    <p>Helps the digestion <br> & metabolism of sugars*</p>
-                </li>
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/04.svg" alt="">
-                    </span>
-                    <p>Sustains high daily <br> energy levels*</p>
-                </li>
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/05.svg" alt="" srcset="">
-                    </span>
-                    <p>Promotes Short & Long <br> Term Healthy & Balanced blood glucose levels*</p>
-                </li>
-                <li class="results__item">
-                    <span>
-                        <img src="img/resualts/06.svg" alt="" srcset="">
-                    </span>
-                    <p>Reduces the craving <br> for sugars & other carbs*</p>
-                </li>
-            </ul>
-            <p class="results__notice">*Individual results may vary</p>
+        <div class="wrapper">
+            <div class="results__wrap">
+                <ul class="results__list">
+                    <li>
+                        <span>
+                            <img src="img/resualts/01.svg" alt="">
+                        </span>
+                        <p>Promotes healthy pancreatic beta cells function*</p>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/resualts/02.svg" alt="">
+                        </span>
+                        <p>Supports weight loss <br> &amp; the metabolism of fats*</p>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/resualts/03.svg" alt="">
+                        </span>
+                        <p>Helps the digestion <br> &amp; metabolism of sugars*</p>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/resualts/04.svg" alt="">
+                        </span>
+                        <p>Sustains high daily <br> energy levels*</p>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/resualts/05.svg" alt="" srcset="">
+                        </span>
+                        <p>Promotes Short &amp; Long <br> Term Healthy &amp; Balanced<br> blood glucose levels*</p>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/resualts/06.svg" alt="" srcset="">
+                        </span>
+                        <p>Reduces the craving <br> for sugars &amp; other carbs*</p>
+                    </li>
+                </ul>
+                <div class="results__notice">
+                    <p>*Individual results may vary</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="reviews">
-        <div class="container">
+        <div class="wrapper">
             <div class="reviews__wrapper">
                 <div class="reviews__head">
                     <h2>Over 2000 <br> 5 Star Reviews</h2>
                     <div class="reviews__stars">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="star__icon"></span>
+                        <span class="star__icon"></span>
+                        <span class="star__icon"></span>
+                        <span class="star__icon"></span>
+                        <span class="star__icon"></span>
                     </div>
                 </div>
                 <div class="reviews-slider">
                     <div class="swiper-container reviews__clients">
                         <div class="swiper-wrapper">
                             <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
+                                <blockquote>
+                                    <div class="quote-text">
+                                        <p><i>"If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"</i></p>
+                                    </div>
+                                    <div class="quote-author">
+                                        <p>-Jane Hudsell, CuraLin User</p>
+                                    </div>
+                                </blockquote>
                             </div>
                             <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
+                                <blockquote>
+                                    <div class="quote-text">
+                                        <p><i>"If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"</i></p>
+                                    </div>
+                                    <div class="quote-author">
+                                        <p>-Jane Hudsell, CuraLin User</p>
+                                    </div>
+                                </blockquote>
                             </div>
                             <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
-                            </div>
-                            <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
-                            </div>
-                            <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
-                            </div>
-                            <div class="reviews__content swiper-slide">
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <p>"If it works for me, how could it not work for anybody else?"</p>
-                                <div>-Jane Hudsell, CuraLin User</div>
+                                <blockquote>
+                                    <div class="quote-text">
+                                        <p><i>"If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"<br>
+                                                "If it works for me, how could it not work for anybody else?"</i></p>
+                                    </div>
+                                    <div class="quote-author">
+                                        <p>-Jane Hudsell, CuraLin User</p>
+                                    </div>
+                                </blockquote>
                             </div>
                         </div>
-                        <div class="swiper-pagination swiper-pagination1"></div>
+                        <div class="reviews__slider-bullets"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="products">
-        <div class="container">
+        <div class="wrapper">
             <div class="products__list">
+
                 <div class="product-card">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>CuraLin</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>CuraLin</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
+                            </div>
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p></p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-01.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p></p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old"></p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
+                                </div>
+                                <div class="original-price">
                                     <p>$53</p>
-                                    <p class="price-offer"></p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="price-offer">
+                                    <p></p>
                                 </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="product-card most-popular">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>10% OFF</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>10% OFF</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
                             </div>
-                        </div>              
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p>Most Popular</p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-02.png" alt="">
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p>Most Popular</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-02.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old">$242</p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
+                                </div>
+                                <div class="original-price">
                                     <p>$142</p>
-                                    <p class="price-offer">only $46 per bottle</p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="price-offer">
+                                    <p>only $46 per bottle</p>
                                 </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="product-card big-savings">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>20% OFF</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>20% OFF</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
+                            </div>
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p>Biggest Savings</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-03.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p>Biggest Savings</p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-03.png" alt="">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old">$242</p>
-                                    <p>$248</p>
-                                    <p class="price-offer">only $40 per bottle</p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="original-price">
+                                    <p>$53</p>
                                 </div>
+                                <div class="price-offer">
+                                    <p>only $40 per bottle</p>
+                                </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <section class="policy">
-        <div class="container">
+        <div class="wrapper">
             <div class="policy__wrap">
                 <div class="police__img">
                     <img src="img/what-is/05.svg" alt="">
                 </div>
                 <div class="policy__info">
-                    <h2 class="section-title">Return Policy</h2>
+                    <h2>Return Policy</h2>
                     <p>
-                        You're covered by a money back guarantee. CuraLin works. 
-                        <br>But you can return it for ANY reason and get your money back. 
-                        <br>No questions. No hassle. 
+                        You're covered by a money back guarantee. CuraLin works.
+                        <br>But you can return it for ANY reason and get your money back.
+                        <br>No questions. No hassle.
                         <br>Yes, even if you opened the bottle.
                     </p>
                 </div>
@@ -344,285 +370,283 @@
         </div>
     </section>
     <section class="interview">
-        <div class="container">
+        <div class="wrapper">
             <div class="interview-wrap">
                 <div class="interview-text">
-                    <h4>Real Diabetics <br>
-                        Share their <br>
-                        CuraLin Success</h4>
+                    <div class="interview-title">
+                        <h4>Real Diabetics <br>
+                            Share their <br>
+                            CuraLin Success</h4>
+                    </div>
+
                     <div class="interview-link">
                         <a href="javascript:void(0)">Watch Video ></a>
                     </div>
                 </div>
                 <div class="interview-video">
-                    <a href="javascript:void(0)">
-                        <img src="img/component-section/video.png" alt="">
-                        <span class="play"></span>
-                    </a>
+                    <div class="video-wrap" data-src="https://www.youtube.com/embed/E6WecqD1c0E">
+                        <span><img src="img/component-section/video.png" alt=""></span>
+                        <button type="button" class="play"></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="component">   
-        <div class="component-img">
-            <div class="component-wrap">
-                <h4>What’s inside CuraLin?</h4>
-                <h2 class="section-title">Nature, Perfected by Science</h2>
+    <section class="component">
+        <div class="component-bg">
+            <div class="wrapper">
+                <div class="component-title">
+                    <h3>What’s inside CuraLin?</h3>
+                    <h2>Nature, Perfected by Science</h2>
+                </div>
             </div>
         </div>
+
         <div class="component-slider">
-            <div class="slider-wrap">
-                <div class="swiper-container thumbs-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 1</h5>
+            <div class="wrapper">
+                <div class="component-slider__wrap">
+                    <div class="slider-wrap">
+                        <div class="swiper-container thumbs-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-img">
+                                        <div class="img-wrap">
+                                            <img src="img/component-section/leaf.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-img">
+                                        <div class="img-wrap">
+                                            <img src="img/component-section/leaf.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 2</h5>
+                        <div class="swiper-container main-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slide-text">
+                                        <h4>Bitter Melon</h4>
+                                        <p>
+                                            Promotes healthy insulin tolerance and a
+                                            healthy rate of glucose absorption. <br>
+                                            Supports healthy pancreas function
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slide-text">
+                                        <h4>Bitter Melon 2</h4>
+                                        <p>
+                                            Promotes healthy insulin tolerance and a
+                                            healthy rate of glucose absorption. <br>
+                                            Supports healthy pancreas function
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 3</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 4</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 5</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img">
-                                <div class="img-wrap">
-                                    <img src="img/component-section/leaf.png" alt="">
-                                    <h5>Bitter Melon 6</h5>
-                                </div>
-                            </div>
+                            <div class="component__slider-button prev"></div>
+                            <div class="component__slider-button next"></div>
+                            <div class="component__slider-bullets"></div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container main-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-text">
-                                <p>
-                                    Promotes healthy insulin tolerance and a 
-                                    healthy rate of glucose absorption. <br>
-                                    Supports healthy pancreas function
-                                </p>
-                            </div>
-                        </div>
-                    </div>        
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-pagination swiper-pagination2"></div>
-                </div>
             </div>
         </div>
     </section>
-    <section class="stockup">
-        <div class="container">
-            <h2 class="section-title">Stock Up & Save</h2>
+    <section class="products">
+        <div class="wrapper">
+            <div class="products-title">
+                <h2>Stock Up & Save</h2>
+            </div>
             <div class="products__list">
+
                 <div class="product-card">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>CuraLin</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>CuraLin</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
+                            </div>
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p></p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-01.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p></p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old"></p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
+                                </div>
+                                <div class="original-price">
                                     <p>$53</p>
-                                    <p class="price-offer"></p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="price-offer">
+                                    <p></p>
                                 </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="product-card most-popular">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>10% OFF</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>10% OFF</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
                             </div>
-                        </div>              
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p>Most Popular</p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-02.png" alt="">
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p>Most Popular</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-02.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old">$242</p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
+                                </div>
+                                <div class="original-price">
                                     <p>$142</p>
-                                    <p class="price-offer">only $46 per bottle</p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="price-offer">
+                                    <p>only $46 per bottle</p>
                                 </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="product-card big-savings">
                     <div class="wrap">
-                        <div class="discount">
-                            <div class="discount-wrap">
-                                <h4>20% OFF</h4>
-                                <p>+ FREE SHIPPING</p>
+                        <div class="top_info">
+                            <div class="discount">
+                                <div class="discount-wrap">
+                                    <h4>20% OFF</h4>
+                                    <p>+ FREE SHIPPING</p>
+                                </div>
+                            </div>
+                            <div class="picture">
+                                <div class="discount-text">
+                                    <p>Biggest Savings</p>
+                                </div>
+                                <div class="img">
+                                    <img src="img/product/product-03.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="picture">
-                            <div class="discount-text">
-                                <p>Biggest Savings</p>
-                            </div>
-                            <div class="img">
-                                <img src="img/product/product-03.png" alt="">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="main">
-                                <div class="price">
-                                    <p class="price-old">$242</p>
-                                    <p>$248</p>
-                                    <p class="price-offer">only $40 per bottle</p>
+                        <div class="bottom_info">
+                            <div class="price">
+                                <div class="discount-price">
+                                    <p>$242</p>
                                 </div>
-                                <div class="order__btn">
-                                    <a href="javascript:void(0)">ORDER NOW</a>
+                                <div class="original-price">
+                                    <p>$53</p>
                                 </div>
+                                <div class="price-offer">
+                                    <p>only $40 per bottle</p>
+                                </div>
+                            </div>
+                            <div class="order__btn">
+                                <a href="javascript:void(0)">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <section class="faq">
-        <div class="container">
+        <div class="wrapper">
             <div class="faq__wrap">
-                <h2 class="section-title">FAQ</h2>
+                <div class="faq__title">
+                    <h2>FAQ</h2>
+                </div>
                 <div class="faq__accordion">
-                    <div class="faq__accordion-item">
-                        <h5>How many bottles should I order if I want to stock up?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
-                    <div class="faq__accordion-item">
-                        <h5>What are the long-term results I can expect using CuraLin?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
-                    <div class="faq__accordion-item">
-                        <h5>Why do you recommend I order a 6 pack?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
-                    <div class="faq__accordion-item">
-                        <h5>How can I get my family and friends using CuraLin?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
-                    <div class="faq__accordion-item">
-                        <h5>I’ve started feeling so much more healthy energy lately. Is that normal when on CuraLin?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
-                    <div class="faq__accordion-item">
-                        <h5>As I maintain healthy blood sugar levels, am I entitled to a treat now and again?</h5>
-                        <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user dependent).</p>
-                    </div>
+                    <ul >
+                        <li>
+                            <div class="accordion_title">
+                                <h3>How many bottles should I order if I want to stock up?</h3>
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion_title">
+                                <h3>What are the long-term results I can expect using CuraLin?</h3>
+
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion_title">
+                                <h3>Why do you recommend I order a 6 pack?</h3>
+
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion_title">
+                                <h3>How can I get my family and friends using CuraLin?</h3>
+
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion_title">
+                                <h3>I’ve started feeling so much more healthy energy lately. Is that normal when on
+                                    CuraLin?</h3>
+
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion_title">
+                                <h3>As I maintain healthy blood sugar levels, am I entitled to a treat now and again?
+                                </h3>
+
+                            </div>
+                            <div class="accordion_text">
+                                <p>Each unit of CuraLin contains 180 capsules, a 1-2 <br> months supply of CuraLin (user
+                                    dependent).</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -631,7 +655,7 @@
 <!-- ===== jQuery ===== -->
 <script src="js/jquery-3.4.1.min.js" defer></script>
 <!-- ===== SWIPER JS ===== -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <!-- ===== MAIN JS ===== -->
 <script src="js/script.js" defer></script>
 </body>
