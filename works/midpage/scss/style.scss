@@ -1331,6 +1331,12 @@ header {
             background-color: transparent;
             box-shadow: none;
         }
+        .products-title {
+            padding-bottom: 37px;
+            h2 {
+                font-size: 30px;
+            }
+        }
         .product-card {
             width: 100%;
             padding: 0;
@@ -1446,7 +1452,7 @@ header {
     // Component Section
     .component {
         .component-bg {
-            padding-bottom: 19.7%;
+            padding-bottom: 7%;
         }
         .component-title {
             padding: 15% 0 16.5% 0;
@@ -1455,6 +1461,45 @@ header {
             }
             h2 {
                 font-size: 30px;
+            }
+        }
+        .component-slider__wrap {
+            padding-bottom: 21%;
+        }
+    }
+    // FAQ Section
+    .faq {
+        .faq__wrap {
+            padding: 24.5% 0 22% 0;
+            .faq__title {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+            .faq__accordion {
+                padding-top: 12.5%;
+                ul {
+                    li {
+                        padding: 10px 0;
+                        .accordion_title {
+                            padding-left: 26px;
+                            h3 {
+                                font-size: 16px;
+                                line-height: 1.42;
+                            }
+                            &::before {
+                                top: 1px;
+                                left: 5px;
+                            }
+                        }
+                        .accordion_text {
+                            padding: 3px 0 0 6px;
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
