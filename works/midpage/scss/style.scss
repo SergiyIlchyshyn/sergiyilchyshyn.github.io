@@ -965,17 +965,21 @@ header {
             max-width: 881px;
         }
     }
-    // .products {
-    //     .wrapper {
-    //         max-width: 1234px;
-    //     }
-    // }
-    // .policy,
-    // .interview {
-    //     .wrapper {
-    //         max-width: 1212px;
-    //     }
-    // }
+    .products {
+        .wrapper {
+            max-width: 1064px;
+        }
+    }
+    .policy {
+        .wrapper {
+            max-width: 1045px;
+        }
+    }
+    .interview {
+        .wrapper {
+            max-width: 1016px;
+        }
+    }
     // Header
     header {
         padding: 6.7% 0 2.8% 0;
@@ -1037,7 +1041,7 @@ header {
     // What Is Section
     .what__is {
         .what__is-wrap {
-            padding: 10.2% 0 4.5% 4.8%;
+            padding: 10.2% 0 4.5% 4%;
         }
         .what__is-wrap-text {
             h2 {
@@ -1077,18 +1081,18 @@ header {
         }
         .what__is-right-picture {
             span {
-                margin: 0 -9% 0 -21%;
+                margin: -4% -9% 0% -21%;
             }
         }
     }
     // Results Section
     .results {
         .results__wrap {
-            padding: 18px 0 5.7% 0;
+            padding: 19px 0 5.7% 0;
         }
         .results__list {
             li {
-                padding: 20px 10px;
+                padding: 20px 10px 23px 10px;
                 span {
                     max-width: 48px;
                     padding-bottom: 7px;
@@ -1100,7 +1104,7 @@ header {
             }
         }
         .results__notice {
-            padding-top: 22px;
+            padding-top: 17px;
             p {
                 font-size: 14px;
             }
@@ -1109,11 +1113,13 @@ header {
     // Reviews Section
     .reviews {
         .reviews__wrapper {
-            padding: 7.6% 0 7.1% 0;
+            padding: 7.6% 0 6.2% 0;
         }
         .reviews__head {
+            padding-bottom: 55px;
             h2 {
-                font-size: 52px;
+                font-size: 44px;
+                letter-spacing: 0.5px;
             }
             .reviews__stars {
                 padding-top: 18px;
@@ -1123,6 +1129,174 @@ header {
                     margin: 0 4px;
                 }
             }
+        }
+        .reviews-slider {
+            .reviews__content {
+                blockquote {
+                    .quote-text {
+                        p {
+                            font-size: 25px;
+                            line-height: 1.57;
+                        }
+                    }
+                    .quote-author {
+                        padding-top: 28px;
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .reviews__clients {
+                padding-bottom: 40px;
+            }
+        }
+    }
+    // Products Section
+    .products {
+        .products-title {
+            h2 {
+                font-size: 45px;
+            }
+        }
+        .product-card {
+            .discount {
+                .discount-wrap {
+                    padding: 18px 5px 7px 5px;
+                    h4 {
+                        font-size: 36px;
+                    }
+                    p {
+                        font-size: 21px;
+                    }
+                }
+            }
+            .picture {
+                .discount-text {
+                    padding: 5px;
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .bottom_info {
+                .price {
+                    .discount-price {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                    .original-price {
+                        p {
+                            font-size: 21px;
+                        }
+                    }
+                    .price-offer {
+                        p {
+                            font-size: 19px;
+                        }
+                    }
+                }
+                .order__btn {
+                    padding-top: 13px;
+                    a {
+                        width: auto;
+                        font-size: 14px;
+                        padding: 12px 70px;
+                    }
+                }
+            }
+        }
+    }
+    // Policy Section
+    .policy {
+        .policy__wrap {
+            padding: 3.8% 0 3.4% 0;
+            .police__img {
+                max-width: 200px;
+            }
+            .policy__info {
+                padding-left: 34px;
+                h2 {
+                    font-size: 45px;
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // Interview Section
+    .interview {
+        .interview-wrap {
+            padding: 5.9% 0 10.3% 0;
+            .interview-text {
+                padding: 1.2% 16px 0 0;
+                .interview-title {
+                    h4 {
+                        font-size: 45px;
+                    }
+                }
+                .interview-link {
+                    padding-top: 12px;
+                    a {
+                        font-size: 21px;
+                    }
+                }
+            }
+            .interview-video {
+                padding-right: 1.5%;
+            }
+        }
+    }
+    // Component Section
+    .component {
+        .component-title {
+            padding: 6.2% 0 5.3% 0;
+            h3 {
+                font-size: 25px;
+                letter-spacing: 0.3px;
+            }
+            h2 {
+                font-size: 44px;
+                letter-spacing: 0.3px;
+            }
+        }
+        .component-slider {
+            .slider-wrap {
+                max-width: 596px;
+                .thumbs-slider {
+                    .slide-img {
+                        max-width: 375px;
+                        margin: 0 auto;
+                        position: relative;
+                    }
+                }
+                .main-slider {
+                    padding-bottom: 33px;
+                    .slide-text {
+                        h4 {
+                            font-size: 21px;
+                        }
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                    .component__slider-bullets {
+                        span.bullet {
+                            width: 7px;
+                            height: 7px;
+                        }
+                    }
+                    .component__slider-button {
+                        top: calc(42% - 20px);
+                    }
+                }
+            }
+        }
+        .component-slider__wrap {
+            padding-bottom: 7.5%;
         }
     }
 }
