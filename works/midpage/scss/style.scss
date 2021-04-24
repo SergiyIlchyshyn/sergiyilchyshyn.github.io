@@ -1155,6 +1155,7 @@ header {
     // Products Section
     .products {
         .products-title {
+            padding-bottom: 26px;
             h2 {
                 font-size: 45px;
             }
@@ -1297,6 +1298,36 @@ header {
         }
         .component-slider__wrap {
             padding-bottom: 7.5%;
+        }
+    }
+    // FAQ Section
+    .faq {
+        .faq__wrap {
+            padding: 4% 0 13% 0;
+            .faq__title {
+                h2 {
+                    font-size: 45px;
+                }
+            }
+            .faq__accordion {
+                padding-top: 2.6%;
+                max-width: 620px;
+                ul {
+                    li {
+                        padding: 26px 0 16px 0;
+                        .accordion_title {
+                            h3 {
+                                font-size: 18px;
+                            }
+                        }
+                        .accordion_text {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
