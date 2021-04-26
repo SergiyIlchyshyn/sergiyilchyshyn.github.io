@@ -1352,6 +1352,17 @@ header {
             max-width: 760px;
         }
     }
+    .policy {
+        .wrapper {
+            max-width: 786px;
+        }
+    }
+    .interview {
+        .wrapper {
+            max-width: 786px;
+        }
+    }
+    // Top Intro Section
     .top__intro {
         .top__intro-wrapper {
             padding: 11.6% 0 16.8% 0;
@@ -1378,6 +1389,255 @@ header {
                     width: 57%;
                     right: 0;
                     bottom: 15%;
+                }
+            }
+        }
+    }
+    // What Is Section
+    .what__is {
+        .what__is-wrap {
+            padding: 10.2% 0 4.5% 3%;
+        }
+        .what__is-wrap-text {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 14px;
+                &:first-of-type {
+                    font-size: 16px;
+                }
+            }
+        }
+        .order__wrapper {
+            .order__btn {
+                a {
+                    padding: 14px 52px;
+                }
+            }
+        }
+        .what__is-right-picture {
+            span {
+                margin: -4% -9% 0% -21%;
+            }
+        }
+    }
+    // Results Section
+    .results {
+        .results__list {
+            li {
+                span {
+                    max-width: 42px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .results__notice {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    // Reviews Section
+    .reviews {
+        .reviews__wrapper {
+            padding: 7.6% 0 6.2% 0;
+        }
+        .reviews__head {
+            h2 {
+                font-size: 40px;
+            }
+            .reviews__stars {
+                padding-top: 18px;
+                span.star__icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .reviews-slider {
+            .reviews__content {
+                blockquote {
+                    .quote-text {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                    .quote-author {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .reviews__slider-bullets {
+                span.bullet {
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+    // Products Section
+    .products {
+        .products-title {
+            padding-bottom: 19px;
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .product-card {
+            .discount {
+                .discount-wrap {
+                    h4 {
+                        font-size: 32px;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+            .picture {
+                .discount-text {
+                    padding: 5px;
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .bottom_info {
+                .price {
+                    .discount-price {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .original-price {
+                        p {
+                            font-size: 19px;
+                        }
+                    }
+                    .price-offer {
+                        padding-top: 6px;
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .order__btn {
+                    padding-top: 13px;
+                    a {
+                        font-size: 12px;
+                        padding: 12px 56px;
+                    }
+                }
+            }
+        }
+    }
+    // Policy Section
+    .policy {
+        .policy__wrap {
+            .police__img {
+                max-width: 175px;
+            }
+            .policy__info {
+                padding-left: 30px;
+                h2 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // Interview Section
+    .interview {
+        .interview-wrap {
+            padding: 4.6% 0 8% 0;
+            .interview-text {
+                padding: 1.2% 8px 0 8px;
+                .interview-title {
+                    h4 {
+                        font-size: 36px;
+                    }
+                }
+                .interview-link {
+                    a {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+    // Component Section
+    .component {
+        .component-title {
+            h3 {
+                font-size: 21px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .component-slider {
+            margin-top: -13%;
+            .slider-wrap {
+                max-width: 568px;
+                .thumbs-slider {
+                    .slide-img {
+                        &::before {
+                            padding-bottom: 48.3%;
+                        }
+                    }
+                }
+                .main-slider {
+                    .slide-text {
+                        h4 {
+                            font-size: 19px;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                    .component__slider-button {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .component-slider__wrap {
+            padding-bottom: 6%;
+        }
+    }
+    // FAQ Section
+    .faq {
+        .faq__wrap {
+            .faq__title {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            .faq__accordion {
+                max-width: 576px;
+                ul {
+                    li {
+                        padding: 25px 0 18px 0;
+                        .accordion_title {
+                            padding-left: 40px;
+                            h3 {
+                                font-size: 16px;
+                            }
+                        }
+                        .accordion_text {
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1415,6 +1675,264 @@ header {
                 span {
                     width: 60%;
                     bottom: 12%;
+                }
+            }
+        }
+    }
+    // Brands Section
+    .logo__brands {
+        .logo__brands-list {
+            li {
+                width: calc(100% / 2);
+            }
+        }
+    }
+    // What Is Section
+    .what__is {
+        .what__is-wrap {
+            padding: 7% 0 3% 3%;
+        }
+        .what__is-wrap-text {
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 13px;
+                &:first-of-type {
+                    font-size: 15px;
+                }
+            }
+        }
+        .order__wrapper {
+            padding-top: 6%;
+            .order__btn {
+                padding-bottom: 15px;
+                a {
+                    font-size: 16px;
+                }
+            }
+            .order__subtitle {
+                .order__subtitle-item {
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // Results Section
+    .results {
+        .results__wrap {
+            padding: 19px 20px 5.7% 20px;
+        }
+        .results__list {
+            li {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .results__notice {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    // Reviews Section
+    .reviews {
+        .reviews__wrapper {
+            padding: 7% 0 6% 0;
+        }
+        .reviews__head {
+            padding-bottom: 48px;
+            h2 {
+                font-size: 35px;
+            }
+            .reviews__stars {
+                span.star__icon {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+        .reviews-slider {
+            .reviews__content {
+                blockquote {
+                    .quote-text {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                    .quote-author {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .reviews__clients {
+                padding-bottom: 38px;
+            }
+        }
+    }
+    // Products Section
+    .products {
+        .products-title {
+            padding-bottom: 14px;
+            h2 {
+                font-size: 35px;
+            }
+        }
+        .product-card {
+            .discount {
+                .discount-wrap {
+                    h4 {
+                        font-size: 32px;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+            .picture {
+                .discount-text {
+                    padding: 5px;
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .bottom_info {
+                .price {
+                    .discount-price {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .original-price {
+                        p {
+                            font-size: 19px;
+                        }
+                    }
+                    .price-offer {
+                        padding-top: 6px;
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .order__btn {
+                    padding-top: 13px;
+                    a {
+                        font-size: 12px;
+                        padding: 12px 56px;
+                    }
+                }
+            }
+        }
+    }
+    // Policy Section
+    .policy {
+        .policy__wrap {
+            .police__img {
+                max-width: 175px;
+            }
+            .policy__info {
+                padding-left: 30px;
+                h2 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // Interview Section
+    .interview {
+        .interview-wrap {
+            padding: 4.6% 0 8% 0;
+            .interview-text {
+                padding: 1.2% 8px 0 8px;
+                .interview-title {
+                    h4 {
+                        font-size: 36px;
+                    }
+                }
+                .interview-link {
+                    a {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+    // Component Section
+    .component {
+        .component-title {
+            h3 {
+                font-size: 21px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+        }
+        .component-slider {
+            margin-top: -13%;
+            .slider-wrap {
+                max-width: 568px;
+                .thumbs-slider {
+                    .slide-img {
+                        &::before {
+                            padding-bottom: 48.3%;
+                        }
+                    }
+                }
+                .main-slider {
+                    .slide-text {
+                        h4 {
+                            font-size: 19px;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                    .component__slider-button {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .component-slider__wrap {
+            padding-bottom: 6%;
+        }
+    }
+    // FAQ Section
+    .faq {
+        .faq__wrap {
+            .faq__title {
+                h2 {
+                    font-size: 35px;
+                }
+            }
+            .faq__accordion {
+                max-width: 576px;
+                ul {
+                    li {
+                        padding: 25px 0 18px 0;
+                        .accordion_title {
+                            padding-left: 40px;
+                            h3 {
+                                font-size: 16px;
+                            }
+                        }
+                        .accordion_text {
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1499,7 +2017,6 @@ header {
     .logo__brands {
         .logo__brands-list {
             li {
-                width: calc(100% / 2);
                 padding: 15px;
             }
         }
