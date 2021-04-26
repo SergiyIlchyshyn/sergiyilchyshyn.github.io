@@ -1041,7 +1041,7 @@ header {
     // What Is Section
     .what__is {
         .what__is-wrap {
-            padding: 10.2% 0 4.5% 4%;
+            padding: 10.2% 0 4.5% 4.7%;
         }
         .what__is-wrap-text {
             h2 {
@@ -1088,7 +1088,7 @@ header {
     // Results Section
     .results {
         .results__wrap {
-            padding: 19px 0 5.7% 0;
+            padding: 19px 25px 5.7% 38px;
         }
         .results__list {
             li {
@@ -1212,7 +1212,7 @@ header {
     // Policy Section
     .policy {
         .policy__wrap {
-            padding: 3.8% 0 3.4% 0;
+            padding: 3.8% 0 3.4% 1%;
             .police__img {
                 max-width: 200px;
             }
@@ -1231,9 +1231,9 @@ header {
     // Interview Section
     .interview {
         .interview-wrap {
-            padding: 5.9% 0 10.3% 0;
+            padding: 5.6% 0 10.1% 0;
             .interview-text {
-                padding: 1.2% 16px 0 0;
+                padding: 1.2% 16px 0 8px;
                 .interview-title {
                     h4 {
                         font-size: 45px;
@@ -1247,7 +1247,16 @@ header {
                 }
             }
             .interview-video {
-                padding-right: 1.5%;
+                padding: 0 5px 0 7px;
+                .video-wrap {
+                    &::before {
+                        padding-bottom: 79.8%;
+                    }
+                    button.play {
+                        width: 82px;
+                        height: 82px;
+                    }
+                }
             }
         }
     }
@@ -1275,13 +1284,15 @@ header {
                     }
                 }
                 .main-slider {
-                    padding-bottom: 33px;
+                    padding-bottom: 40px;
+                    margin-top: -6.7%;
                     .slide-text {
                         h4 {
                             font-size: 21px;
                         }
                         p {
-                            font-size: 17px;
+                            padding-top: 8px;
+                            font-size: 18px;
                         }
                     }
                     .component__slider-bullets {
@@ -1291,7 +1302,7 @@ header {
                         }
                     }
                     .component__slider-button {
-                        top: calc(42% - 20px);
+                        top: calc(42% - 13px);
                     }
                 }
             }
@@ -1311,13 +1322,16 @@ header {
             }
             .faq__accordion {
                 padding-top: 2.6%;
-                max-width: 620px;
+                max-width: 602px;
                 ul {
                     li {
-                        padding: 26px 0 16px 0;
+                        padding: 25px 0 18px 0;
                         .accordion_title {
+                            padding-left: 40px;
                             h3 {
                                 font-size: 18px;
+                                letter-spacing: -0.1px;
+                                line-height: 1.1;
                             }
                         }
                         .accordion_text {
