@@ -1,7 +1,15 @@
-//bacgrounds
-$body-bg: #f9f9f9;
-$test: aqua;
-$test2: pink;
+/*========== Colors ==========*/
+$color-white: #ffffff;
+$color-gray: #f9f9f9;
+$color-accent: #e53467;
+$header-bg: #07072c;
+// $body-bg: #f9f9f9;
 
-//fonts
-$basic-family: "Roboto", Arial, Helvetica, sans-serif;
+/*========== Fonts ==========*/
+$basic-family: "Poppins", sans-serif;
+
+/*========== Font weight ==========*/
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;

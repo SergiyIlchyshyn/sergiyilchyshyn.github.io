@@ -1,0 +1,70 @@
+.main-header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 120px;
+    }
+}
+.nav__menu {
+    ul {
+        display: flex;
+        li {
+            a {
+                color: $color-white;
+                line-height: 1.5;
+                text-transform: uppercase;
+                transition: color 0.4s ease-in-out;
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+        }
+    }
+}
+.nav__lang {
+    ul {
+        justify-content: flex-end;
+        li {
+            a {
+                font-size: 12px;
+                font-weight: $font-bold;
+            }
+            .divider {
+                display: inline-block;
+                width: 2px;
+                padding: 0 10px 0 8px;
+                color: $color-white;
+            }
+        }
+    }
+}
+.nav__list {
+    margin-top: 12px;
+    ul {
+        li {
+            padding-left: 40px;
+            a {
+                font-weight: $font-medium;
+            }
+        }
+    }
+}
+
+// .test__img {
+//     max-width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+// .test__pic {
+//     background: url("../img/mentor.jpg") no-repeat center center/cover;
+// }

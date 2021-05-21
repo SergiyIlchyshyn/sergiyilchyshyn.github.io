@@ -5,6 +5,7 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
 const include = require('gulp-file-include');
+const autoprefixer = require('gulp-autoprefixer');
 const webp = require('gulp-webp');
 const webpHTML = require('gulp-webp-html');
 const sync = require('browser-sync').create();
@@ -23,6 +24,7 @@ function scss() {
     return src('app/scss/main.scss')
         .pipe(sass())
         .pipe(cleanCSS({ level: 2 }))
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], flex: true }))
         .pipe(dest(buildFolder + '/css'))
         .pipe(sass().on('error', sass.logError))
 };
@@ -66,8 +68,7 @@ function serve() {
         port: 3010,
         reloadOnRestart: true,
         server: {
-            baseDir: buildFolder,
-            directory: true
+            baseDir: buildFolder
         }
     });
 
