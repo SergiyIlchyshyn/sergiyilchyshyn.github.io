@@ -26,6 +26,9 @@
                 &:hover {
                     color: $color-accent;
                 }
+                &.active {
+                    color: $color-accent;
+                }
             }
         }
     }
@@ -41,7 +44,7 @@
             .divider {
                 display: inline-block;
                 width: 2px;
-                padding: 0 10px 0 8px;
+                padding: 0 12px 0 8px;
                 color: $color-white;
             }
         }
@@ -51,7 +54,14 @@
     margin-top: 12px;
     ul {
         li {
-            padding-left: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            &:first-of-type {
+                padding-left: 0;
+            }
+            &:last-of-type {
+                padding-right: 0;
+            }
             a {
                 font-weight: $font-medium;
             }
