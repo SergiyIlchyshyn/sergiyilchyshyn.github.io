@@ -20,9 +20,15 @@
 }
 .home__container {
     height: 100vh;
-    padding: 0 120px;
+    // padding: 2% 230px 0 120px;
+    padding: 8% 11.6% 0 6%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    // @media (max-width: 1367px) {
+    //     padding: 2% 120px 0;
+    // }
 }
 .home__slider,
 .home__data {
@@ -31,23 +37,87 @@
     line-height: 1.5;
 }
 .home__slider {
-    h3 {
-        margin-bottom: 2px;
-        font-size: 24px;
-        font-weight: $font-bold;
+    max-width: 370px;
+    height: 50%;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 1367px) {
+        height: 70%;
     }
-    p {
-        font-size: 18px;
+}
+.home__slider-container {
+    max-height: calc(100% - 60px);
+    position: initial;
+    @media (max-width: 1367px) {
+        max-height: 100%;
+    }
+    .home__slider-item {
+        height: 125px !important;
+        width: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 5px solid transparent;
+        @media (max-width: 1367px) {
+            height: 105px !important;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: $font-bold;
+            @media (max-width: 1367px) {
+                font-size: 20px;
+            }
+        }
+        p {
+            padding-top: 2px;
+            font-size: 18px;
+            @media (max-width: 1367px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .swiper-slide-active {
+        padding: 0 34px;
+        background-color: rgba(0, 0, 75, 0.4);
+        border-radius: 4px;
+        border-left-color: $color-accent;
+        transition: all 0.3s ease-in-out;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 27px;
+        height: 17px;
+        color: $color-white;
+        left: 108px;
+        transform: rotate(90deg);
+        &::after {
+            font-size: 27px;
+        }
+    }
+    .swiper-button-prev {
+        top: 0;
+    }
+    .swiper-button-next {
+        bottom: -27px;
+        top: auto;
     }
 }
 .home__data {
     h1 {
         font-size: 62px;
         margin: 0;
+        @media (max-width: 1367px) {
+            font-size: 42px;
+        }
     }
     p {
-        margin: 24px 0 46px 0;
+        padding: 24px 0 46px 0;
         font-size: 20px;
+        @media (max-width: 1367px) {
+            padding: 20px 0;
+        }
     }
     .home__button {
         a {
@@ -63,6 +133,9 @@
             transition: background 0.4s ease-in-out;
             &:hover {
                 background-color: darken($color: $color-accent, $amount: 5%);
+            }
+            @media (max-width: 1367px) {
+                padding: 16px 41px;
             }
         }
     }

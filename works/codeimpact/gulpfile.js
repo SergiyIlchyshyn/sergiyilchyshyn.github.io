@@ -9,6 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const webp = require('gulp-webp');
 const webpHTML = require('gulp-webp-html');
 const sync = require('browser-sync').create();
+const concat = require('gulp-concat');
 
 const buildFolder = 'docs'; //папка куда собирается проект
 
@@ -21,20 +22,25 @@ function html() {
 }
 
 function scss() {
+    src('./app/scss/vendor/**.css')
+        .pipe(concat('vendor.css'))
+        .pipe(dest(buildFolder + '/css')) 
     return src('app/scss/main.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS({ level: 2 }))
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], flex: true }))
         .pipe(dest(buildFolder + '/css'))
-        .pipe(sass().on('error', sass.logError))
 };
 
 function js() {
-    return src('app/js/main.js')
+    src('./app/js/vendor/**.js')
+        .pipe(concat('vendor.js'))
+        .pipe(dest(buildFolder + '/js'))
+    return src('./app/js/scripts/**.js')
         .pipe(include({
             prefix: '@@'
         }))
-        .pipe(uglify())
+        .pipe(concat('main.js'))
         .pipe(dest(buildFolder + '/js'))
 };
 
