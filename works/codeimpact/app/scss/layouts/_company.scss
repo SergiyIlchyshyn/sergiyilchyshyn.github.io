@@ -1,0 +1,32 @@
+.company {
+    &__wrapper {
+        max-width: 1712px;
+        margin: 0 auto;
+        padding: 93px 0;
+        text-align: center;
+    }
+    .company__title {
+        line-height: 1.5;
+        h3 {
+            color: $color-accent;
+            font-size: 24px;
+            font-weight: $font-medium;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: $font-bold;
+            color: #202020;
+        }
+    }
+    .company__logo {
+        padding-top: 71px;
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

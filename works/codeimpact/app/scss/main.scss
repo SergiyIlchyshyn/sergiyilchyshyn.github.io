@@ -3,5 +3,7 @@
 @import "variables";
 @import "style";
 // ======================
-@import "blocks/header";
-@import "blocks/home";
+@import "layouts/header";
+@import "layouts/home";
+@import "layouts/specialties";
+@import "layouts/company";
