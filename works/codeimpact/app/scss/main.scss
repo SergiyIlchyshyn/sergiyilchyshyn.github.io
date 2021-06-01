@@ -1,9 +1,10 @@
-@import "fonts";
-@import "reset";
-@import "variables";
-@import "style";
+@import "base/fonts";
+@import "base/reset";
+@import "base/variables";
+@import "base/style";
 // ======================
 @import "layouts/header";
 @import "layouts/home";
 @import "layouts/specialties";
 @import "layouts/company";
+@import "layouts/overview";

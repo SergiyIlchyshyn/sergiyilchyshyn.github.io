@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @@include('page/head-data.html')
+    @@include('partials/head-data.html')
 </head>
 
 <body>
@@ -10,7 +10,7 @@
     <div class="site-container">
         
         <!-- Header -->
-        @@include('layouts/header.html')
+        @@include('partials/header.html')
 
         <main>
             <!--========== HOME ==========-->
@@ -19,10 +19,12 @@
             @@include('layouts/specialties.html')
             <!--========== COMPANY ==========-->
             @@include('layouts/company.html')
+            <!--========== OVERVIEW ==========-->
+            @@include('layouts/overview.html')
         </main>
 
         <!-- Footer -->
-        @@include('layouts/footer.html')
+        @@include('partials/footer.html')
 
     </div>
 
