@@ -1,0 +1,59 @@
+.projects {
+    background: url("../img/projects/bg.png") no-repeat / cover;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(360deg, #e53467 -58.22%, #020050 100%);
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .projects__title {
+        padding: 91px 150px 50px 150px;
+        &-wrap {
+            max-width: 672px;
+            line-height: 1.5;
+            color: $color-white;
+        }
+        h3 {
+            margin-bottom: 16px;
+            color: $color-accent;
+            font-size: 24px;
+            font-weight: $font-medium;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+        &-btn {
+            padding-top: 36px;
+        }
+        .button {
+            display: inline-block;
+            padding: 20px 43px;
+            background-color: $color-accent;
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 5px;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+            transition: background $transition;
+            &:hover {
+                background-color: darken($color-accent, 5%);
+            }
+        }
+    }
+    .projects__slider {
+        padding: 0 0 107px 150px;
+        .slider-wrap {
+            display: flex;
+        }
+    }
+}

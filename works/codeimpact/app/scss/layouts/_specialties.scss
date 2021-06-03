@@ -34,7 +34,7 @@
     &__img {
         width: 100%;
         position: relative;
-        transition: all 0.3s ease-in-out;
+        transition: all $transition;
         overflow: hidden;
         &::before {
             content: "";
