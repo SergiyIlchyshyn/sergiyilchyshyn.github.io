@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /*===== Home slider =====*/
+    /* ===== Home slider ===== */
     let homeSlider = new Swiper(".home__slider-container", {
         direction: "vertical",
         slidesPerView: "auto",
@@ -13,7 +13,7 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
     });
-    /*===== Overview slider =====*/
+    /* ===== Overview slider ===== */
     let overviewSlider = new Swiper(".overview__slider-wrap", {
 		slidesPerView: 1,
 		spaceBetween: 0,
@@ -26,4 +26,10 @@ $(document).ready(function () {
         },
 		keyboard: true,
 	});
+    /* ===== Projects slider ===== */
+    let projectsSlider = new Swiper(".projects__slider-wrap", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerView: "auto",
+    });
 });
