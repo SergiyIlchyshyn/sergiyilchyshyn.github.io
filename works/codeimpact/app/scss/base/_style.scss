@@ -1,5 +1,4 @@
 html {
-    box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -7,7 +6,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -33,5 +32,10 @@ a {
 .wrapper {
     width: 100%;
     max-width: 1712px;
+    margin: 0 auto;
+}
+.mini-wrapper {
+    width: 100%;
+    max-width: 1620px;
     margin: 0 auto;
 }

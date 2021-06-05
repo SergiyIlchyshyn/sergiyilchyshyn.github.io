@@ -56,6 +56,9 @@
     }
     .projects__slider {
         padding: 0 0 107px 150px;
+        // .swiper-wrapper {
+        //     padding-right: 300px;
+        // }
         .swiper-slide {
             width: 764px !important;
             height: 422px;
@@ -65,8 +68,30 @@
                 height: 100%;
                 object-fit: cover;
             }
-            &:last-child {
-                padding-right: 150px;
+            .slide-text {
+                height: 172px;
+                padding: 50px 55px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba($color-blue, 0.5);
+                border-radius: 0px 0px 12px 12px;
+                z-index: 10;
+                h3 {
+                    color: $color-accent;
+                    font-size: 24px;
+                    font-weight: $font-medium;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                }
+                h4 {
+                    color: $color-white;
+                    font-size: 24px;
+                    line-height: 1.5;
+                    font-weight: $font-bold;
+                }
             }
         }
     }
