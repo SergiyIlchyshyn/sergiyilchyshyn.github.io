@@ -1,0 +1,13 @@
+.brands {
+    &__wrapper {
+        padding: 79px 0 79px 53px;
+    }
+    .brands__item {
+        img {
+            display: block;
+            max-width: 250px;
+            margin: 0 auto;
+            filter: grayscale(100%);
+        }
+    }
+}

@@ -32,4 +32,15 @@ $(document).ready(function () {
         spaceBetween: 30,
         slidesPerView: "auto",
     });
+    /* ===== Brands slider ===== */
+    let brandsSlider = new Swiper(".brands__list", {
+        slidesPerView: 5,
+        spaceBetween: 100,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
 });
