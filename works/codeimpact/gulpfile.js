@@ -28,7 +28,7 @@ function scss() {
     return src('app/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS({ level: 2 }))
-        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], flex: true }))
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], flex: true, grid: true }))
         .pipe(dest(buildFolder + '/css'))
 };
 

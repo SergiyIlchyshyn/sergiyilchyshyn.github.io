@@ -3,12 +3,80 @@
     color: $color-white;
     .footer-container {
         padding: 46px 0 36px 0;
+        line-height: 1.5;
+        ul {
+            li {
+                a {
+                    display: inline-block;
+                    color: $color-white;
+                    transition: color $transition;
+                    &:hover {
+                        color: $color-accent;
+                    }
+                }
+            }
+        }
     }
     .footer-info {
         padding-bottom: 65px;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid $color-accent;
+        h4 {
+            margin-bottom: 20px;
+            color: $color-accent;
+            font-size: 18px;
+            font-weight: $font-semi-bold;
+            text-transform: uppercase;
+        }
+        ul {
+            li {
+                margin-bottom: 8px;
+            }
+        }
+        .footer-logo {
+            text-align: center;
+            &-img {
+                padding-bottom: 24px;
+                a {
+                    display: inline-block;
+                    max-width: 200px;
+                }
+            }
+            p {
+                color: $color-accent;
+                font-size: 18px;
+            }
+        }
+        .footer-newsletter {
+            &__form {
+                padding-top: 28px;
+                form {
+                    display: flex;
+                    padding: 2px;
+                    background-color: $color-white;
+                    border-radius: 5px;
+                }
+                input {
+                    padding: 15px 5px 15px 33px;
+                    border-radius: 5px;
+                    border: none;
+                    outline-color: $color-accent;
+                }
+                button {
+                    width: 105px;
+                    background-color: $color-accent;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
     }
     .footer-links {
         padding: 36px 0;
@@ -16,8 +84,21 @@
         justify-content: center;
         ul {
             display: flex;
-            a {
-                color: $color-white;
+            li {
+                margin-right: 36px;
+                position: relative;
+                &:last-of-type {
+                    margin-right: 0;
+                    &::after {
+                        content: none;
+                    }
+                }
+                &::after {
+                    content: "|";
+                    position: absolute;
+                    right: -18px;
+                    color: $color-accent;
+                }
             }
         }
     }
