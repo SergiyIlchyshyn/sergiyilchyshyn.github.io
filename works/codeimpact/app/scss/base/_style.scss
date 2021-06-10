@@ -39,3 +39,8 @@ a {
     max-width: 1620px;
     margin: 0 auto;
 }
+.site-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

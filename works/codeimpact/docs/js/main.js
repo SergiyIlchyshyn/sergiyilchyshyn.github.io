@@ -14,7 +14,7 @@ $(document).ready(function () {
     /*===== Menu link active =====*/
     let menuLink = $(".nav__menu .nav__list li a");
     menuLink.on("click", menuLink, function (event) {
-        event.preventDefault();
+        // event.preventDefault();
 		menuLink.removeClass("active");
         $(this).addClass("active");
 	});
