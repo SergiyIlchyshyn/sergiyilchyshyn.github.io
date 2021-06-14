@@ -1,0 +1,26 @@
+.page-nav {
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 24px 0;
+        color: $text-color;
+        a {
+            display: inline-block;
+            font-size: 18px;
+            color: $text-color;
+            line-height: 1.5;
+            &.active {
+                color: $color-accent;
+            }
+        }
+        span {
+            display: inline-block;
+            margin: 0 24px;
+            svg {
+                width: 15px;
+                height: 18px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
