@@ -1,7 +1,7 @@
-##Link for my portfolio:
+Link for my portfolio:
 https://sergiyilchyshyn.github.io/
 
-##Links for my works:
+Links for my works:
 
 https://sergiyilchyshyn.github.io/works/responsive-portfolio/ <br>
 https://sergiyilchyshyn.github.io/works/site-1/ <br>
@@ -19,3 +19,5 @@ https://sergiyilchyshyn.github.io/works/site-12/ <br>
 https://sergiyilchyshyn.github.io/works/smart-city/ <br>
 https://sergiyilchyshyn.github.io/works/pizzatime/ <br>
 http://dn.school5kp.org.ua/ <br>
+https://sergiyilchyshyn.github.io/works/codeimpact/docs/<br>
+https://sergiyilchyshyn.github.io/works/midpage/<br>
