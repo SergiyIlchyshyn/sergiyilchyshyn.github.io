@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* набір селекторів та їх налаштувань */
+/* для заборони збільшення фізичних розмірів елементів */
+/* у випадку додавання їм внутрішніх відступів (padding) */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+/* =================================================================================================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 14px;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #F1F1F1;
+    min-height: 100vh;
+    padding-top: 46px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 76px;
+}
+.nav-item {
+    padding: 0 25px;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: all 0.2s linear;
+}
+.nav-link.active {
+    color: #606060;
+}
+.nav-link:hover {
+    color: #606060;
+    text-decoration: underline;
+}
