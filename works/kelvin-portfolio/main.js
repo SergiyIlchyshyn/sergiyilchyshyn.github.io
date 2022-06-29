@@ -9,3 +9,7 @@ navBtn.onclick = () => {
         navBtnImg.src = "./img/nav-open.svg";
     }
 }
+
+AOS.init({
+    disable: 'phone',
+});

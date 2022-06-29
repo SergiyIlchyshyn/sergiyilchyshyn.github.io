@@ -49,7 +49,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-    transition: background-color 0.2s esse-in, top 0.2s ease-in;
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
 }
 .btn:hover, .btn:focus {
     background-color: var(--gray);
@@ -254,7 +254,25 @@ body {
     .header-heading span {
         font-size: 28px;
     }
-    .services {
+    .services, .portfolio, .contacts {
         padding: 60px 0;
+    }
+    .portfolio-title {
+        margin-bottom: 50px;
+    }
+    .project-img {
+        margin-bottom: 30px;
+    }
+    .project + .project {
+        margin-top: 55px;
+    }
+    .contacts-content {
+        padding: 20px 0;
+    }.contacts-button {
+        margin-bottom: 70px;
+    }
+    .contacts-social {
+        margin-bottom: 20px;
+        column-gap: 50px;
     }
 }
