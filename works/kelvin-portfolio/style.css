@@ -2,6 +2,13 @@
 /* набір селекторів та їх налаштувань */
 /* для заборони збільшення фізичних розмірів елементів */
 /* у випадку додавання їм внутрішніх відступів (padding) */
+:root {
+    --Popins: 'Poppins', sans-serif;
+    --bgColor: #F1F1F1;
+    --black: #000000;
+    --blackText: #070707;
+    --gray: #828282;
+}
 html {
     box-sizing: border-box;
 }
@@ -15,20 +22,46 @@ html {
 }
 /* =================================================================================================== */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #000;
+    font-family: var(--Popins);
+    color: var(--black);
     font-size: 14px;
 }
 .container {
     max-width: 1230px;
+    width: 100%;
     padding: 0 30px;
     margin: 0 auto;
 }
+.title {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--blackText);
+}
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: var(--blackText);
+    border-radius: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s esse-in, top 0.2s ease-in;
+}
+.btn:hover, .btn:focus {
+    background-color: var(--gray);
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: var(--black);
+}
+/* Header */
 .header {
-    background-color: #F1F1F1;
-    min-height: 100vh;
+    background-color: var(--bgColor);
+    /* min-height: 100vh; */
     padding-top: 46px;
 }
+/* Header nav */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -42,9 +75,12 @@ body {
     list-style-type: none;
     display: flex;
 }
+.nav-button {
+    display: none;
+}
 .nav-link {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
@@ -56,4 +92,94 @@ body {
 .nav-link:hover {
     color: #606060;
     text-decoration: underline;
+}
+/* Header content */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.header-content {
+    max-width: 500px;
+    margin-top: 124px;
+}
+.header-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+}
+.header-content p {
+    line-height: 2;
+}
+/* Services section */
+.services {
+    padding: 90px 0;
+}
+.services-row {
+    display: flex;
+    column-gap: 30px;
+}
+.servisec-card__img {
+    margin-bottom: 30px;
+}
+.services-card__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.services-card p {
+    line-height: 2;
+}
+/* Portfolio section */
+.portfolio {
+    padding: 90px 0;
+    background-color: var(--bgColor);
+}
+.portfolio-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.project {
+    text-align: center;
+}
+.project + .project {
+    margin-bottom: 90px;
+}
+.project-img {
+    margin-bottom: 40px;
+}
+.project-title {
+    font-size: 18px;
+}
+.project-title a {
+    color: var(--black);
+    text-decoration: underline;
+}
+/* Contacts Footer */
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-content {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 18px;
+}
+.contacts-content p + p {
+    margin-top: 1em;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+.contacts-footer {
+    color: var(--gray);
 }
