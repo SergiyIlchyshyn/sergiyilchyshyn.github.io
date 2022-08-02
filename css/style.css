@@ -463,6 +463,7 @@ footer>.container {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -474,6 +475,7 @@ footer>.container {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -647,7 +649,7 @@ header a {
 }
 
 .portfolio-item__img {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -673,7 +675,7 @@ header a {
 }
 
 .overlay__text {
-    transform: translateY(50px);
+    transform: translateY(300%);
     background-color: royalblue;
     padding: 0.625rem;
     color: #FFFFFF;
@@ -689,7 +691,7 @@ header a {
 }
 
 .portfolio-item__img:hover .overlay__text {
-    transform: translateY(-20px);
+    transform: translateY(0);
 }
 
 .overlay__text:hover {
@@ -1051,9 +1053,11 @@ textarea:focus {
     .container {
         width: 100%;
     }
+
     .row {
         flex-direction: column;
     }
+
     .col-4 {
         width: 500px;
         text-align: center;
@@ -1061,23 +1065,28 @@ textarea:focus {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .header {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .header__title {
         font-size: 38px;
         line-height: 48px;
         margin-bottom: 15px;
     }
+
     .header__slogan {
         font-size: 22px;
         line-height: 38px;
     }
+
     .portfolio {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     footer {
         padding-bottom: 50px;
     }
@@ -1094,15 +1103,19 @@ textarea:focus {
     .col-4 {
         width: 80%;
     }
+
     .scrolltop {
-        display: none!important;
+        display: none !important;
     }
+
     .overlay {
         display: none;
     }
+
     .portfolio-item__img:hover img {
         opacity: 1;
     }
+
     #particles-js {
         display: none;
     }
@@ -1112,6 +1125,7 @@ textarea:focus {
     .title {
         font-size: 35px;
     }
+
     .category__filter ul li {
         flex-grow: 1;
         font-size: 12px;
